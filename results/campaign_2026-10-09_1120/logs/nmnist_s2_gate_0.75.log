@@ -1,0 +1,10 @@
+[data] N-MNIST from /home/ubuntu/data/nmnist/Train: 7000 samples, frames (6, 2, 34, 34)
+  rewire_gated      s2 nmnist  none   | acc 0.82 bwt -0.05 | recur 0.0/0 steps | S_AUR +0.12 (S_ctrl +1.00) RIF +0.005 | AUROC 0.90 | 66022 uJ 4216.1KB
+  rewire_gated_maha s2 nmnist  none   | acc 0.83 bwt -0.04 | recur 0.0/0 steps | S_AUR +0.11 (S_ctrl +1.00) RIF +0.005 | AUROC 1.00 | 98517 uJ 4216.1KB
+  rewire_v1_gated   s2 nmnist  none   | acc 0.79 bwt -0.05 | recur 0.0/0 steps | S_AUR +0.16 (S_ctrl +0.87) RIF +0.006 | AUROC 0.87 | 21544 uJ 1084.1KB
+  hlop_gated        s2 nmnist  none   | acc 0.85 bwt -0.07 | recur 1.7/40 steps | S_AUR +0.80 (S_ctrl +1.00) RIF +0.005 | AUROC 0.68 | 105011 uJ 978.5KB
+  replay_gated      s2 nmnist  none   | acc 0.82 bwt -0.08 | recur 3.3/40 steps | S_AUR +0.79 (S_ctrl +0.98) RIF +0.008 | AUROC 0.71 | 104051 uJ 2168.8KB
+done: 5 runs in 72s
+[worker] nmnist seed 2 gate: 5 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset nmnist --seed 2 --stage gate --out results/results_2026-10-09_1120/parts/nmnist/gate/t0.75/s2 --data_root /home/ubuntu/data --theta 0.75

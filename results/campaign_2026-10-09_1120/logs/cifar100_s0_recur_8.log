@@ -1,0 +1,17 @@
+[data] cifar100: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s0 cifar100 none   | acc 0.62 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.46 (S_ctrl +1.00) RIF +0.009 | AUROC 0.91 | 505947 uJ 5296.8KB
+  rewire_gated      s0 cifar100 none   | acc 0.62 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.46 (S_ctrl +1.00) RIF +0.009 | AUROC 0.91 | 502017 uJ 5296.8KB
+  rewire_v1         s0 cifar100 none   | acc 0.49 bwt +0.01 | recur 0.0/0 steps | S_AUR -0.11 (S_ctrl +0.15) RIF +0.037 | AUROC 0.87 | 155346 uJ 1624.8KB
+  ctrl_slda_input   s0 cifar100 none   | acc 0.63 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.51 (S_ctrl +1.00) RIF +0.007 | AUROC 0.91 | 71847 uJ 1624.8KB
+  ranpac            s0 cifar100 none   | acc 0.51 bwt -0.00 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +0.32) RIF +0.033 | AUROC 0.93 | 152187 uJ 1624.8KB
+  ridge_input       s0 cifar100 none   | acc 0.59 bwt +0.00 | recur 0.0/0 steps | S_AUR -0.21 (S_ctrl -0.68) RIF +0.030 | AUROC 0.91 | 71847 uJ 1624.8KB
+  hd_memory         s0 cifar100 none   | acc 0.42 bwt -0.13 | recur 0.0/0 steps | S_AUR -0.68 (S_ctrl +1.00) RIF -0.001 | AUROC 0.87 | 85487 uJ 206.6KB
+  naive             s0 cifar100 none   | acc 0.05 bwt -0.90 | recur 40.0/40 steps | S_AUR +0.30 (S_ctrl +0.33) RIF +0.069 | AUROC 0.41 | 805632 uJ 0.0KB
+  replay            s0 cifar100 none   | acc 0.54 bwt -0.38 | recur 40.0/40 steps | S_AUR +0.61 (S_ctrl +0.56) RIF -0.007 | AUROC 0.54 | 1670374 uJ 3212.5KB
+  replay_iso        s0 cifar100 none   | acc 0.47 bwt -0.46 | recur 40.0/40 steps | S_AUR +0.48 (S_ctrl +0.51) RIF +0.002 | AUROC 0.39 | 1668874 uJ 1624.3KB
+  hlop              s0 cifar100 none   | acc 0.51 bwt -0.10 | recur 40.0/40 steps | S_AUR +0.10 (S_ctrl +1.00) RIF +0.028 | AUROC 0.41 | 2757714 uJ 3872.0KB
+done: 11 runs in 1008s
+[worker] cifar100 seed 0 recur: 11 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar100 --seed 0 --stage recur --out results/results_2026-10-09_1120/parts/cifar100/recur/n8/s0 --data_root /home/ubuntu/data --n-recur 8

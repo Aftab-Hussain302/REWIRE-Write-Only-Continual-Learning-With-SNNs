@@ -1,0 +1,35 @@
+\begin{tabular}{lrrrrrrr}
+\toprule
+Method & ACC & BWT & AUROC$_{\rm stream}$ & AUROC$_{\rm test}$ & Lifetime mJ & Re-adm. mJ & Stored KB \\
+\midrule
+REWIRE (ours) & 71.2{\tiny$\pm$0.9} & -4.3 & 0.96 & 0.72 & 657 & 6.9 & 6498 \\
+REWIRE-gated (ours) & 71.1{\tiny$\pm$0.9} & -4.3 & 0.96 & 0.72 & 595 & 3.1 & 6498 \\
+REWIRE-gated, Mahalanobis (ours) & 71.1{\tiny$\pm$0.9} & -4.3 & 0.94 & 0.60 & 779 & 4.2 & 6498 \\
+REWIRE-gated, $\theta$=0.95 (ours) & 71.2{\tiny$\pm$0.9} & -4.3 & 0.96 & 0.72 & 644 & 6.1 & 6498 \\
+REWIRE-gated, budget 128 (ours) & 71.2{\tiny$\pm$0.9} & -4.2 & 0.96 & 0.72 & 658 & 7.0 & 6498 \\
+REWIRE-v1: sketch only, ridge & 57.9{\tiny$\pm$0.7} & 0.1 & 0.96 & 0.68 & 200 & 2.1 & 2226 \\
+REWIRE-v1 gated & 59.9{\tiny$\pm$1.1} & 2.2 & 0.96 & 0.68 & 193 & 1.7 & 2226 \\
+Sketch only, LDA readout & 65.6{\tiny$\pm$0.9} & -5.7 & 0.96 & 0.68 & 200 & 2.1 & 2226 \\
+Dual view, ridge readout & 68.1{\tiny$\pm$0.6} & 2.3 & 0.96 & 0.72 & 657 & 6.9 & 6498 \\
+REWIRE, sketch 128 & \textbf{71.8{\tiny$\pm$0.9}} & -5.2 & 0.97 & 0.73 & 240 & 2.5 & 3102 \\
+REWIRE, sketch 256 & 71.6{\tiny$\pm$0.8} & -5.0 & 0.96 & 0.73 & 348 & 3.7 & 4106 \\
+REWIRE, selective write (errors) & 71.2{\tiny$\pm$1.0} & -4.2 & 0.96 & 0.72 & 653 & 6.7 & 6498 \\
+REWIRE, selective write (random) & 71.1{\tiny$\pm$1.0} & -4.3 & 0.96 & 0.72 & 653 & 6.7 & 6498 \\
+REWIRE-v1, selective write (errors) & 61.4{\tiny$\pm$0.7} & 3.6 & 0.96 & 0.68 & 200 & 2.1 & 2226 \\
+REWIRE-v1, selective write (random) & 60.8{\tiny$\pm$0.7} & 3.1 & 0.96 & 0.68 & 200 & 2.1 & 2226 \\
+REWIRE-v1, recursive solve & 57.9{\tiny$\pm$0.7} & 0.1 & 0.96 & 0.68 & 169 & 1.8 & 2226 \\
+SLDA on the inputs & \underline{71.8{\tiny$\pm$0.9}} & -5.7 & 0.97 & 0.74 & 106 & 1.1 & 2226 \\
+ReLU layer instead of LIF & 71.4{\tiny$\pm$0.9} & -4.3 & 0.96 & 0.73 & 650 & 6.8 & 6498 \\
+RanPAC-style (ReLU, ridge) & 60.9{\tiny$\pm$0.5} & -0.1 & 0.96 & 0.69 & 194 & 2.0 & 2226 \\
+Ridge on the inputs & 68.5{\tiny$\pm$0.4} & -0.7 & 0.97 & 0.74 & 106 & 1.1 & 2226 \\
+HD bundling & 52.7{\tiny$\pm$0.9} & -11.7 & 0.96 & 0.68 & 99 & 1.0 & 413 \\
+HLOP & 63.0{\tiny$\pm$1.2} & -7.5 & 0.73 & 0.70 & 2948 & 15.6 & 3872 \\
+HLOP-R (subspace refreshed) & 55.8{\tiny$\pm$2.0} & -14.6 & 0.75 & 0.66 & 3604 & 56.7 & 3872 \\
+HLOP, competence-gated & 63.4{\tiny$\pm$1.1} & -7.1 & 0.74 & 0.70 & 2834 & 8.5 & 3872 \\
+Rehearsal (20/class) & 64.5{\tiny$\pm$1.3} & -26.9 & 0.81 & 0.69 & 1938 & 20.5 & 3212 \\
+Rehearsal (iso-memory) & 61.3{\tiny$\pm$0.8} & -30.6 & 0.76 & 0.67 & 1937 & 20.5 & 2225 \\
+Rehearsal, competence-gated & 64.9{\tiny$\pm$0.6} & -26.5 & 0.81 & 0.70 & 1825 & 13.5 & 3212 \\
+EWC & 11.2{\tiny$\pm$1.4} & -85.4 & 0.38 & 0.51 & 1057 & 11.2 & 5706 \\
+Fine-tuning & 11.2{\tiny$\pm$1.5} & -85.4 & 0.41 & 0.51 & 927 & 9.8 & 0 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,35 @@
+[data] cifar100: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.010 | AUROC 0.92 | 552566 uJ 5296.8KB
+  rewire_gated      s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.010 | AUROC 0.92 | 550082 uJ 5296.8KB
+  rewire_gated_maha s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.010 | AUROC 0.86 | 748834 uJ 5296.8KB
+  rewire_gated_t095 s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.010 | AUROC 0.92 | 555456 uJ 5296.8KB
+  rewire_gated_b128 s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.010 | AUROC 0.92 | 555456 uJ 5296.8KB
+  rewire_v1         s4 cifar100 none   | acc 0.46 bwt -0.02 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +0.56) RIF +0.037 | AUROC 0.92 | 169711 uJ 1624.8KB
+  rewire_v1_gated   s4 cifar100 none   | acc 0.47 bwt -0.01 | recur 0.0/0 steps | S_AUR -0.05 (S_ctrl +1.00) RIF +0.037 | AUROC 0.92 | 169870 uJ 1624.8KB
+  abl_sketch_lda    s4 cifar100 none   | acc 0.56 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.31 (S_ctrl +1.00) RIF +0.008 | AUROC 0.92 | 169711 uJ 1624.8KB
+  abl_dualview_ridge s4 cifar100 none   | acc 0.58 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.02 (S_ctrl +0.53) RIF +0.030 | AUROC 0.92 | 552566 uJ 5296.8KB
+  abl_width128      s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.21 (S_ctrl +1.00) RIF +0.009 | AUROC 0.94 | 194818 uJ 2350.8KB
+  abl_width256      s4 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.20 (S_ctrl +1.00) RIF +0.009 | AUROC 0.91 | 286489 uJ 3204.8KB
+  abl_select_errors s4 cifar100 none   | acc 0.64 bwt -0.06 | recur 0.0/0 steps | S_AUR -0.12 (S_ctrl -2.83) RIF +0.010 | AUROC 0.92 | 548617 uJ 5296.8KB
+  abl_select_random s4 cifar100 none   | acc 0.63 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.11 (S_ctrl -3.54) RIF +0.010 | AUROC 0.92 | 548670 uJ 5296.8KB
+  abl_v1_select_errors s4 cifar100 none   | acc 0.50 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.06 (S_ctrl +0.68) RIF +0.037 | AUROC 0.92 | 168960 uJ 1624.8KB
+  abl_v1_select_random s4 cifar100 none   | acc 0.49 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.03 (S_ctrl +0.65) RIF +0.036 | AUROC 0.92 | 168970 uJ 1624.8KB
+  abl_v1_woodbury   s4 cifar100 none   | acc 0.46 bwt -0.02 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +0.56) RIF +0.037 | AUROC 0.92 | 149440 uJ 1624.8KB
+  ctrl_slda_input   s4 cifar100 none   | acc 0.64 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.27 (S_ctrl -3.17) RIF +0.008 | AUROC 0.94 | 78459 uJ 1624.8KB
+  ctrl_relu         s4 cifar100 none   | acc 0.64 bwt -0.06 | recur 0.0/0 steps | S_AUR -0.15 (S_ctrl -0.17) RIF +0.011 | AUROC 0.92 | 549062 uJ 5296.8KB
+  ranpac            s4 cifar100 none   | acc 0.50 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.01 (S_ctrl +0.38) RIF +0.032 | AUROC 0.90 | 166207 uJ 1624.8KB
+  ridge_input       s4 cifar100 none   | acc 0.59 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.02 (S_ctrl +0.54) RIF +0.030 | AUROC 0.94 | 78459 uJ 1624.8KB
+  hd_memory         s4 cifar100 none   | acc 0.43 bwt -0.13 | recur 0.0/0 steps | S_AUR -0.50 (S_ctrl +1.00) RIF +0.001 | AUROC 0.92 | 93423 uJ 206.6KB
+  hlop              s4 cifar100 none   | acc 0.52 bwt -0.09 | recur 40.0/40 steps | S_AUR +0.17 (S_ctrl -0.33) RIF +0.028 | AUROC 0.68 | 2878198 uJ 3872.0KB
+  hlop_adaptive     s4 cifar100 none   | acc 0.43 bwt -0.19 | recur 40.0/40 steps | S_AUR +0.21 (S_ctrl +0.02) RIF +0.028 | AUROC 0.69 | 3534803 uJ 3872.0KB
+  hlop_gated        s4 cifar100 none   | acc 0.53 bwt -0.09 | recur 32.5/40 steps | S_AUR +0.18 (S_ctrl +0.48) RIF +0.028 | AUROC 0.69 | 2835312 uJ 3872.0KB
+  replay            s4 cifar100 none   | acc 0.56 bwt -0.36 | recur 40.0/40 steps | S_AUR +0.60 (S_ctrl +0.58) RIF +0.001 | AUROC 0.62 | 1823656 uJ 3212.5KB
+  replay_iso        s4 cifar100 none   | acc 0.49 bwt -0.44 | recur 40.0/40 steps | S_AUR +0.57 (S_ctrl +0.64) RIF +0.007 | AUROC 0.56 | 1822408 uJ 1624.3KB
+  replay_gated      s4 cifar100 none   | acc 0.56 bwt -0.35 | recur 37.5/40 steps | S_AUR +0.61 (S_ctrl +0.63) RIF +0.002 | AUROC 0.62 | 1805827 uJ 3212.5KB
+  ewc               s4 cifar100 none   | acc 0.11 bwt -0.85 | recur 40.0/40 steps | S_AUR +0.21 (S_ctrl +0.35) RIF +0.073 | AUROC 0.46 | 1000308 uJ 4904.8KB
+  naive             s4 cifar100 none   | acc 0.11 bwt -0.85 | recur 40.0/40 steps | S_AUR +0.21 (S_ctrl +0.40) RIF +0.073 | AUROC 0.45 | 880269 uJ 0.0KB
+done: 29 runs in 3045s
+[worker] cifar100 seed 4 main: 29 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar100 --seed 4 --stage main --out results/results_2026-10-09_1120/parts/cifar100/main/s4 --data_root /home/ubuntu/data

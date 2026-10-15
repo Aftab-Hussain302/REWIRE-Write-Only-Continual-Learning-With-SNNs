@@ -1,0 +1,16 @@
+[data] Tiny-ImageNet-200 from /home/ubuntu/data/tiny-imagenet-200: 100000 samples at 64x64, 200 classes (uint8, 1.2 GB)
+[data] pretrained ResNet-18 features from cache: (100000, 512)
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated      s1 tinyimagenet none   | acc 0.72 bwt -0.03 | recur 0.0/0 steps | S_AUR -0.05 (S_ctrl -0.16) RIF +0.009 | AUROC 0.97 | 627400 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated_maha s1 tinyimagenet none   | acc 0.72 bwt -0.03 | recur 0.0/0 steps | S_AUR -0.05 (S_ctrl -0.16) RIF +0.009 | AUROC 0.92 | 819566 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_v1_gated   s1 tinyimagenet none   | acc 0.59 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.11 (S_ctrl +0.42) RIF +0.032 | AUROC 0.98 | 196784 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  hlop_gated        s1 tinyimagenet none   | acc 0.63 bwt -0.09 | recur 30.0/40 steps | S_AUR +0.21 (S_ctrl -0.02) RIF +0.017 | AUROC 0.78 | 2886792 uJ 3872.0KB
+[data] small dataset: 331 train / 100 test per class
+  replay_gated      s1 tinyimagenet none   | acc 0.65 bwt -0.26 | recur 30.0/40 steps | S_AUR +0.59 (S_ctrl +0.64) RIF +0.002 | AUROC 0.78 | 1852995 uJ 3212.5KB
+done: 5 runs in 631s
+[worker] tinyimagenet seed 1 gate: 5 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset tinyimagenet --seed 1 --stage gate --out results/results_2026-10-09_1120/parts/tinyimagenet/gate/t0.95/s1 --data_root /home/ubuntu/data --theta 0.95

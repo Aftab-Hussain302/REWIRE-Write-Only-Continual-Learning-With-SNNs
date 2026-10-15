@@ -1,0 +1,10 @@
+This folder contains third-party code that was not written by the REWIRE authors.
+
+hlop_module.py is copied verbatim (byte-identical) from the official code release of Xiao, Meng, Zhang, He and Lin,
+"Hebbian Learning based Orthogonal Projection for Continual Learning of Spiking Neural Networks", ICLR 2024:
+https://github.com/pkuxmq/HLOP-SNN/blob/530b89aa19ca1b8e31bd43cf3af8db14a229da64/modules/hlop_module.py
+(repository github.com/pkuxmq/HLOP-SNN, file modules/hlop_module.py, commit 530b89aa19ca1b8e31bd43cf3af8db14a229da64).
+It is licensed under the Apache License 2.0; LICENSE in this folder is the licence file of that repository, copied unchanged.
+It is used unmodified so that the HLOP baseline in this benchmark learns its subspaces with the authors' own Hebbian rule.
+The training loop and the gradient projection of the baseline are REWIRE's implementation (rewire/models/arms.py,
+rewire/modules/neuron.py). See README.md in this folder.

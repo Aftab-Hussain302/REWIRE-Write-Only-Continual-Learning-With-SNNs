@@ -1,0 +1,17 @@
+[data] cifar100: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s2 cifar100 none   | acc 0.64 bwt -0.05 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +1.00) RIF +0.009 | AUROC 0.89 | 645625 uJ 5296.8KB
+  rewire_gated      s2 cifar100 none   | acc 0.64 bwt -0.05 | recur 0.0/0 steps | S_AUR -0.01 (S_ctrl +1.00) RIF +0.009 | AUROC 0.89 | 549288 uJ 5296.8KB
+  rewire_v1         s2 cifar100 none   | acc 0.47 bwt -0.03 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +0.79) RIF +0.031 | AUROC 0.86 | 198263 uJ 1624.8KB
+  ctrl_slda_input   s2 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.22 (S_ctrl +1.00) RIF +0.007 | AUROC 0.90 | 91683 uJ 1624.8KB
+  ranpac            s2 cifar100 none   | acc 0.51 bwt -0.02 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +0.74) RIF +0.030 | AUROC 0.90 | 194249 uJ 1624.8KB
+  ridge_input       s2 cifar100 none   | acc 0.58 bwt -0.02 | recur 0.0/0 steps | S_AUR -0.08 (S_ctrl +0.64) RIF +0.026 | AUROC 0.90 | 91683 uJ 1624.8KB
+  hd_memory         s2 cifar100 none   | acc 0.45 bwt -0.13 | recur 0.0/0 steps | S_AUR -0.36 (S_ctrl +1.00) RIF +0.001 | AUROC 0.86 | 109117 uJ 206.6KB
+  naive             s2 cifar100 none   | acc 0.08 bwt -0.88 | recur 40.0/40 steps | S_AUR +0.36 (S_ctrl +0.47) RIF +0.067 | AUROC 0.49 | 1026888 uJ 0.0KB
+  replay            s2 cifar100 none   | acc 0.57 bwt -0.34 | recur 40.0/40 steps | S_AUR +0.48 (S_ctrl +0.60) RIF -0.002 | AUROC 0.71 | 2130474 uJ 3212.5KB
+  replay_iso        s2 cifar100 none   | acc 0.53 bwt -0.39 | recur 40.0/40 steps | S_AUR +0.38 (S_ctrl +0.57) RIF +0.002 | AUROC 0.62 | 2128760 uJ 1624.3KB
+  hlop              s2 cifar100 none   | acc 0.54 bwt -0.09 | recur 40.0/40 steps | S_AUR +0.14 (S_ctrl +0.66) RIF +0.024 | AUROC 0.52 | 3114071 uJ 3872.0KB
+done: 11 runs in 1186s
+[worker] cifar100 seed 2 recur: 11 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar100 --seed 2 --stage recur --out results/results_2026-10-09_1120/parts/cifar100/recur/n32/s2 --data_root /home/ubuntu/data --n-recur 32

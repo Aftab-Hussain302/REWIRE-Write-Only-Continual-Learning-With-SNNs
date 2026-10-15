@@ -1,0 +1,28 @@
+[data] Tiny-ImageNet-200 from /home/ubuntu/data/tiny-imagenet-200: 100000 samples at 64x64, 200 classes (uint8, 1.2 GB)
+[data] pretrained ResNet-18 features from cache: (100000, 512)
+[data] small dataset: 331 train / 100 test per class
+  rewire            s3 tinyimagenet none   | acc 0.69 bwt -0.04 | recur 0.0/0 steps | S_AUR -0.13 (S_ctrl +0.78) RIF +0.009 | AUROC 0.91 | 601412 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated      s3 tinyimagenet none   | acc 0.69 bwt -0.04 | recur 0.0/0 steps | S_AUR -0.03 (S_ctrl +1.00) RIF +0.009 | AUROC 0.91 | 570859 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_v1         s3 tinyimagenet none   | acc 0.60 bwt +0.03 | recur 0.0/0 steps | S_AUR +0.13 (S_ctrl +0.65) RIF +0.035 | AUROC 0.85 | 183776 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ctrl_slda_input   s3 tinyimagenet none   | acc 0.70 bwt -0.06 | recur 0.0/0 steps | S_AUR -0.24 (S_ctrl +1.00) RIF +0.007 | AUROC 0.93 | 96918 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ranpac            s3 tinyimagenet none   | acc 0.62 bwt +0.03 | recur 0.0/0 steps | S_AUR +0.09 (S_ctrl +0.64) RIF +0.032 | AUROC 0.91 | 177257 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ridge_input       s3 tinyimagenet none   | acc 0.69 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.14 (S_ctrl +0.54) RIF +0.022 | AUROC 0.93 | 96918 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  hd_memory         s3 tinyimagenet none   | acc 0.52 bwt -0.12 | recur 0.0/0 steps | S_AUR -0.56 (S_ctrl +1.00) RIF +0.001 | AUROC 0.85 | 90813 uJ 413.3KB
+[data] small dataset: 331 train / 100 test per class
+  naive             s3 tinyimagenet none   | acc 0.08 bwt -0.88 | recur 40.0/40 steps | S_AUR +0.30 (S_ctrl +0.47) RIF +0.080 | AUROC 0.42 | 854124 uJ 0.0KB
+[data] small dataset: 331 train / 100 test per class
+  replay            s3 tinyimagenet none   | acc 0.63 bwt -0.28 | recur 40.0/40 steps | S_AUR +0.58 (S_ctrl +0.58) RIF +0.005 | AUROC 0.77 | 1782175 uJ 3212.5KB
+[data] small dataset: 331 train / 100 test per class
+  replay_iso        s3 tinyimagenet none   | acc 0.59 bwt -0.33 | recur 40.0/40 steps | S_AUR +0.56 (S_ctrl +0.50) RIF +0.006 | AUROC 0.71 | 1780525 uJ 2224.7KB
+[data] small dataset: 331 train / 100 test per class
+  hlop              s3 tinyimagenet none   | acc 0.62 bwt -0.07 | recur 40.0/40 steps | S_AUR +0.21 (S_ctrl +0.16) RIF +0.020 | AUROC 0.45 | 2825730 uJ 3872.0KB
+done: 11 runs in 965s
+[worker] tinyimagenet seed 3 recur: 11 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset tinyimagenet --seed 3 --stage recur --out results/results_2026-10-09_1120/parts/tinyimagenet/recur/n8/s3 --data_root /home/ubuntu/data --n-recur 8

@@ -1,0 +1,18 @@
+[data] N-MNIST from /home/ubuntu/data/nmnist/Train: 7000 samples, frames (6, 2, 34, 34)
+  rewire            s3 nmnist  none   | acc 0.90 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.67 (S_ctrl +1.00) RIF +0.013 | AUROC 0.96 | 130616 uJ 4216.1KB
+  rewire_gated      s3 nmnist  none   | acc 0.88 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.52 (S_ctrl +1.00) RIF +0.011 | AUROC 0.96 | 66693 uJ 4216.1KB
+  rewire_v1         s3 nmnist  none   | acc 0.85 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.71 (S_ctrl +1.00) RIF +0.012 | AUROC 0.94 | 30201 uJ 1084.1KB
+  ctrl_slda_input   s3 nmnist  none   | acc 0.88 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.70 (S_ctrl +1.00) RIF +0.014 | AUROC 0.91 | 941875 uJ 21151.3KB
+  ranpac            s3 nmnist  none   | acc 0.87 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.68 (S_ctrl +1.00) RIF +0.017 | AUROC 0.96 | 71097 uJ 1084.1KB
+  ridge_input       s3 nmnist  none   | acc 0.83 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.62 (S_ctrl +1.00) RIF +0.014 | AUROC 0.91 | 941875 uJ 21151.3KB
+  hd_memory         s3 nmnist  none   | acc 0.76 bwt -0.08 | recur 0.0/0 steps | S_AUR +0.13 (S_ctrl +0.67) RIF +0.008 | AUROC 0.94 | 17265 uJ 20.7KB
+  naive             s3 nmnist  none   | acc 0.45 bwt -0.50 | recur 40.0/40 steps | S_AUR +0.48 (S_ctrl +0.61) RIF +0.026 | AUROC 0.62 | 124913 uJ 0.0KB
+  ewc               s3 nmnist  none   | acc 0.47 bwt -0.49 | recur 40.0/40 steps | S_AUR +0.50 (S_ctrl +0.64) RIF +0.026 | AUROC 0.61 | 166196 uJ 18584.1KB
+  replay            s3 nmnist  none   | acc 0.89 bwt -0.02 | recur 40.0/40 steps | S_AUR +0.86 (S_ctrl +1.00) RIF +0.013 | AUROC 0.81 | 251631 uJ 2168.8KB
+  replay_iso        s3 nmnist  none   | acc 0.84 bwt -0.07 | recur 40.0/40 steps | S_AUR +0.84 (S_ctrl +0.95) RIF +0.014 | AUROC 0.72 | 251945 uJ 1070.8KB
+  hlop              s3 nmnist  none   | acc 0.88 bwt -0.02 | recur 40.0/40 steps | S_AUR +0.81 (S_ctrl +1.00) RIF +0.014 | AUROC 0.64 | 202432 uJ 978.5KB
+  hlop_adaptive     s3 nmnist  none   | acc 0.88 bwt -0.03 | recur 40.0/40 steps | S_AUR +0.81 (S_ctrl +1.00) RIF +0.013 | AUROC 0.63 | 368364 uJ 978.5KB
+done: 13 runs in 288s
+[worker] nmnist seed 3 recur: 13 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset nmnist --seed 3 --stage recur --out results/results_2026-10-09_1120/parts/nmnist/recur/n16/s3 --data_root /home/ubuntu/data --n-recur 16

@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrrrrr}
+\toprule
+Dataset & & \multicolumn{1}{c}{REWIRE} & \multicolumn{1}{c}{REWIRE-g} & \multicolumn{1}{c}{SLDA-in} & \multicolumn{1}{c}{RanPAC} & \multicolumn{1}{c}{HLOP} & \multicolumn{1}{c}{Reh.} & \multicolumn{1}{c}{Reh.-iso} & \multicolumn{1}{c}{EWC} & \multicolumn{1}{c}{FT} \\
+\midrule
+MNIST & ACC & 91.3{\tiny$\pm$1.2} & 87.8{\tiny$\pm$1.5} & 87.3{\tiny$\pm$1.4} & 90.0{\tiny$\pm$1.9} & 91.0{\tiny$\pm$0.9} & \underline{91.3{\tiny$\pm$1.1}} & \textbf{92.7{\tiny$\pm$0.7}} & 74.1{\tiny$\pm$5.7} & 73.7{\tiny$\pm$5.4} \\
+ & BWT & \underline{1.1{\tiny$\pm$0.6}} & -2.3{\tiny$\pm$0.6} & -0.3{\tiny$\pm$1.4} & -0.6{\tiny$\pm$1.3} & \textbf{3.1{\tiny$\pm$1.6}} & -3.2{\tiny$\pm$0.5} & -1.4{\tiny$\pm$0.8} & -22.0{\tiny$\pm$5.1} & -22.4{\tiny$\pm$4.8} \\
+N-MNIST & ACC & \textbf{91.5{\tiny$\pm$1.6}} & 86.8{\tiny$\pm$2.4} & 88.4{\tiny$\pm$1.5} & 87.9{\tiny$\pm$1.4} & \underline{90.7{\tiny$\pm$1.5}} & 89.7{\tiny$\pm$2.9} & 87.3{\tiny$\pm$2.3} & 55.8{\tiny$\pm$11.6} & 55.8{\tiny$\pm$11.4} \\
+ & BWT & \underline{0.8{\tiny$\pm$1.1}} & -3.9{\tiny$\pm$1.2} & -2.9{\tiny$\pm$1.1} & -0.9{\tiny$\pm$1.8} & \textbf{1.3{\tiny$\pm$4.7}} & -0.4{\tiny$\pm$3.1} & -3.7{\tiny$\pm$2.6} & -39.2{\tiny$\pm$11.5} & -39.2{\tiny$\pm$11.3} \\
+SHD & ACC & \textbf{59.0{\tiny$\pm$2.0}} & \underline{57.8{\tiny$\pm$2.2}} & 47.7{\tiny$\pm$1.7} & 45.2{\tiny$\pm$3.6} & 38.7{\tiny$\pm$1.5} & 55.4{\tiny$\pm$3.7} & 42.0{\tiny$\pm$3.0} & 16.9{\tiny$\pm$2.0} & 16.5{\tiny$\pm$2.5} \\
+ & BWT & \textbf{-3.8{\tiny$\pm$1.4}} & -5.0{\tiny$\pm$1.5} & -8.2{\tiny$\pm$1.2} & \underline{-4.0{\tiny$\pm$3.7}} & -23.6{\tiny$\pm$5.0} & -13.7{\tiny$\pm$6.9} & -32.9{\tiny$\pm$5.0} & -64.4{\tiny$\pm$1.9} & -67.6{\tiny$\pm$2.4} \\
+\midrule
+CIFAR-10 & ACC & \underline{85.3{\tiny$\pm$2.4}} & 81.7{\tiny$\pm$2.8} & \textbf{86.6{\tiny$\pm$2.2}} & 79.1{\tiny$\pm$2.9} & 82.8{\tiny$\pm$2.5} & 81.1{\tiny$\pm$1.5} & 85.1{\tiny$\pm$2.3} & 68.4{\tiny$\pm$3.8} & 68.4{\tiny$\pm$3.9} \\
+ & BWT & \underline{0.2{\tiny$\pm$0.9}} & -3.4{\tiny$\pm$1.2} & 0.0{\tiny$\pm$0.9} & \textbf{3.4{\tiny$\pm$1.6}} & -8.4{\tiny$\pm$2.0} & -11.4{\tiny$\pm$1.8} & -6.3{\tiny$\pm$2.6} & -27.5{\tiny$\pm$4.3} & -27.4{\tiny$\pm$4.5} \\
+CIFAR-100 & ACC & \underline{63.5{\tiny$\pm$1.0}} & 63.5{\tiny$\pm$1.0} & \textbf{64.2{\tiny$\pm$0.9}} & 51.3{\tiny$\pm$1.5} & 52.9{\tiny$\pm$1.2} & 56.3{\tiny$\pm$1.4} & 49.6{\tiny$\pm$1.3} & 9.7{\tiny$\pm$2.3} & 9.6{\tiny$\pm$2.3} \\
+ & BWT & \underline{-6.3{\tiny$\pm$0.8}} & -6.4{\tiny$\pm$0.7} & -7.8{\tiny$\pm$0.3} & \textbf{-1.2{\tiny$\pm$1.0}} & -10.5{\tiny$\pm$0.7} & -34.9{\tiny$\pm$1.2} & -42.9{\tiny$\pm$1.3} & -86.0{\tiny$\pm$1.9} & -86.2{\tiny$\pm$1.9} \\
+Tiny-ImageNet & ACC & \underline{71.2{\tiny$\pm$0.9}} & 71.1{\tiny$\pm$0.9} & \textbf{71.8{\tiny$\pm$0.9}} & 60.9{\tiny$\pm$0.5} & 63.0{\tiny$\pm$1.2} & 64.5{\tiny$\pm$1.3} & 61.3{\tiny$\pm$0.8} & 11.2{\tiny$\pm$1.4} & 11.2{\tiny$\pm$1.5} \\
+ & BWT & \underline{-4.3{\tiny$\pm$1.5}} & -4.3{\tiny$\pm$1.4} & -5.7{\tiny$\pm$1.4} & \textbf{-0.1{\tiny$\pm$0.6}} & -7.5{\tiny$\pm$1.3} & -26.9{\tiny$\pm$1.3} & -30.6{\tiny$\pm$0.9} & -85.4{\tiny$\pm$1.2} & -85.4{\tiny$\pm$1.2} \\
+\midrule
+Cost (mean) & Lifetime mJ & 317 & \underline{248} & 264 & \textbf{104} & 1211 & 1013 & 1012 & 564 & 490 \\
+ & Re-admission mJ & 5.6 & \underline{2.5} & 7.8 & \textbf{2.0} & 11.6 & 18.7 & 18.7 & 10.4 & 9.0 \\
+ & Stored KB & 4796 & 4796 & 5109 & 1374 & 1758 & 2297 & \underline{1370} & 7584 & \textbf{0} \\
+\bottomrule
+\end{tabular}

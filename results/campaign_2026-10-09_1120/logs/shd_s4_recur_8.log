@@ -1,0 +1,31 @@
+[data] SHD from /home/ubuntu/data/shd/shd_train.h5: 7987 samples, frames (20, 1, 700, 1)
+[data] small dataset: 293 train / 100 test per class
+  rewire            s4 shd     none   | acc 0.52 bwt -0.10 | recur 0.0/0 steps | S_AUR +0.04 (S_ctrl +1.00) RIF +0.014 | AUROC 0.61 | 118521 uJ 4336.2KB
+[data] small dataset: 293 train / 100 test per class
+  rewire_gated      s4 shd     none   | acc 0.50 bwt -0.11 | recur 0.0/0 steps | S_AUR +0.05 (S_ctrl +1.00) RIF +0.013 | AUROC 0.61 | 101538 uJ 4336.2KB
+[data] small dataset: 293 train / 100 test per class
+  rewire_v1         s4 shd     none   | acc 0.40 bwt -0.09 | recur 0.0/0 steps | S_AUR +0.14 (S_ctrl +1.00) RIF +0.027 | AUROC 0.67 | 32917 uJ 1144.2KB
+[data] small dataset: 293 train / 100 test per class
+  ctrl_slda_input   s4 shd     none   | acc 0.42 bwt -0.13 | recur 0.0/0 steps | S_AUR +0.05 (S_ctrl +1.00) RIF +0.008 | AUROC 0.56 | 31914 uJ 2078.3KB
+[data] small dataset: 293 train / 100 test per class
+  ranpac            s4 shd     none   | acc 0.40 bwt -0.04 | recur 0.0/0 steps | S_AUR +0.12 (S_ctrl +1.00) RIF +0.036 | AUROC 0.75 | 38592 uJ 1144.2KB
+[data] small dataset: 293 train / 100 test per class
+  ridge_input       s4 shd     none   | acc 0.30 bwt -0.14 | recur 0.0/0 steps | S_AUR +0.07 (S_ctrl +1.00) RIF +0.015 | AUROC 0.56 | 31914 uJ 2078.3KB
+[data] small dataset: 293 train / 100 test per class
+  hd_memory         s4 shd     none   | acc 0.30 bwt -0.18 | recur 0.0/0 steps | S_AUR -0.22 (S_ctrl +1.00) RIF +0.005 | AUROC 0.67 | 19372 uJ 41.3KB
+[data] small dataset: 293 train / 100 test per class
+  naive             s4 shd     none   | acc 0.17 bwt -0.65 | recur 40.0/40 steps | S_AUR +0.12 (S_ctrl +0.67) RIF +0.026 | AUROC 0.78 | 161536 uJ 0.0KB
+[data] small dataset: 293 train / 100 test per class
+  ewc               s4 shd     none   | acc 0.17 bwt -0.66 | recur 40.0/40 steps | S_AUR +0.11 (S_ctrl +0.42) RIF +0.015 | AUROC 0.75 | 186528 uJ 5768.2KB
+[data] small dataset: 293 train / 100 test per class
+  replay            s4 shd     none   | acc 0.51 bwt -0.24 | recur 40.0/40 steps | S_AUR +0.48 (S_ctrl +0.92) RIF +0.026 | AUROC 0.71 | 327225 uJ 4377.5KB
+[data] small dataset: 293 train / 100 test per class
+  replay_iso        s4 shd     none   | acc 0.38 bwt -0.38 | recur 40.0/40 steps | S_AUR +0.25 (S_ctrl +0.47) RIF +0.025 | AUROC 0.74 | 324161 uJ 1135.4KB
+[data] small dataset: 293 train / 100 test per class
+  hlop              s4 shd     none   | acc 0.35 bwt -0.27 | recur 40.0/40 steps | S_AUR +0.10 (S_ctrl +0.45) RIF +0.030 | AUROC 0.54 | 270479 uJ 905.8KB
+[data] small dataset: 293 train / 100 test per class
+  hlop_adaptive     s4 shd     none   | acc 0.37 bwt -0.24 | recur 40.0/40 steps | S_AUR +0.08 (S_ctrl +0.59) RIF +0.032 | AUROC 0.57 | 347279 uJ 905.8KB
+done: 13 runs in 765s
+[worker] shd seed 4 recur: 13 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset shd --seed 4 --stage recur --out results/results_2026-10-09_1120/parts/shd/recur/n8/s4 --data_root /home/ubuntu/data --n-recur 8

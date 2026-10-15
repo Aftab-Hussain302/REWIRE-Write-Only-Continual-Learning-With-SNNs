@@ -1,0 +1,174 @@
+\begin{tabular}{llrrr}
+\toprule
+Dataset & REWIRE minus & mean diff. (pts) & 95\% CI & wins \\
+\midrule
+MNIST & Fine-tuning & +17.6 & [+13.6, +21.1] & -- \\
+MNIST & EWC & +17.2 & [+13.3, +21.0] & -- \\
+MNIST & HD bundling & +13.8 & [+12.5, +15.2] & -- \\
+MNIST & Ridge on the inputs & +8.3 & [+7.8, +8.6] & -- \\
+MNIST & REWIRE-v1 gated & +7.8 & [+7.2, +8.1] & -- \\
+MNIST & REWIRE-v1, selective write (random) & +5.5 & [+4.3, +6.6] & -- \\
+MNIST & REWIRE-v1, selective write (errors) & +4.9 & [+3.9, +5.9] & -- \\
+MNIST & SLDA on the inputs & +3.9 & [+3.4, +4.4] & -- \\
+MNIST & HLOP, competence-gated & +3.6 & [+3.2, +4.1] & -- \\
+MNIST & REWIRE-gated (ours) & +3.5 & [+3.1, +3.9] & -- \\
+MNIST & REWIRE-gated, Mahalanobis (ours) & +3.5 & [+2.8, +4.1] & -- \\
+MNIST & REWIRE-v1, recursive solve & +3.3 & [+2.6, +4.1] & -- \\
+MNIST & REWIRE-v1: sketch only, ridge & +3.3 & [+2.6, +4.1] & -- \\
+MNIST & Rehearsal, competence-gated & +3.0 & [+2.4, +3.7] & -- \\
+MNIST & Dual view, ridge readout & +2.7 & [+2.2, +3.1] & -- \\
+MNIST & REWIRE, sketch 128 & +2.4 & [+2.1, +2.7] & -- \\
+MNIST & REWIRE, selective write (random) & +1.4 & [+1.0, +1.9] & -- \\
+MNIST & RanPAC-style (ReLU, ridge) & +1.3 & [+0.6, +2.1] & -- \\
+MNIST & REWIRE, sketch 256 & +1.2 & [+0.9, +1.6] & -- \\
+MNIST & REWIRE-gated, budget 128 (ours) & +1.2 & [+0.9, +1.4] & -- \\
+MNIST & Sketch only, LDA readout & +1.1 & [+0.7, +1.5] & -- \\
+MNIST & REWIRE, selective write (errors) & +1.0 & [+0.7, +1.3] & -- \\
+MNIST & HLOP-R (subspace refreshed) & +0.8 & [+0.4, +1.1] & -- \\
+MNIST & REWIRE-gated, $\theta$=0.95 (ours) & +0.7 & [+0.3, +1.1] & -- \\
+MNIST & HLOP & +0.3 & [-0.2, +0.9] & -- \\
+MNIST & Rehearsal (20/class) & -0.0 & [-0.8, +0.7] & -- \\
+MNIST & ReLU layer instead of LIF & -0.4 & [-0.6, -0.1] & -- \\
+MNIST & Rehearsal (iso-memory) & -1.5 & [-2.5, -0.5] & -- \\
+N-MNIST & EWC & +35.7 & [+27.2, +44.2] & -- \\
+N-MNIST & Fine-tuning & +35.6 & [+27.7, +44.2] & -- \\
+N-MNIST & HD bundling & +15.4 & [+13.2, +18.0] & -- \\
+N-MNIST & Ridge on the inputs & +9.7 & [+8.5, +10.9] & -- \\
+N-MNIST & REWIRE-v1 gated & +7.5 & [+6.5, +8.6] & -- \\
+N-MNIST & REWIRE-v1, selective write (random) & +5.4 & [+4.6, +6.3] & -- \\
+N-MNIST & REWIRE-v1, selective write (errors) & +5.0 & [+4.2, +5.7] & -- \\
+N-MNIST & REWIRE-gated, Mahalanobis (ours) & +4.7 & [+3.6, +5.4] & -- \\
+N-MNIST & REWIRE-gated (ours) & +4.7 & [+3.7, +5.4] & -- \\
+N-MNIST & REWIRE-v1: sketch only, ridge & +4.2 & [+3.6, +4.6] & -- \\
+N-MNIST & REWIRE-v1, recursive solve & +4.2 & [+3.6, +4.6] & -- \\
+N-MNIST & Rehearsal (iso-memory) & +4.1 & [+3.3, +5.0] & -- \\
+N-MNIST & RanPAC-style (ReLU, ridge) & +3.6 & [+3.3, +3.9] & -- \\
+N-MNIST & Rehearsal, competence-gated & +3.4 & [+2.5, +4.3] & -- \\
+N-MNIST & HLOP, competence-gated & +3.3 & [+1.8, +5.0] & -- \\
+N-MNIST & SLDA on the inputs & +3.1 & [+2.3, +3.9] & -- \\
+N-MNIST & Sketch only, LDA readout & +2.7 & [+2.3, +3.0] & -- \\
+N-MNIST & REWIRE, selective write (random) & +2.0 & [+1.5, +2.5] & -- \\
+N-MNIST & REWIRE-gated, budget 128 (ours) & +1.9 & [+1.3, +2.5] & -- \\
+N-MNIST & REWIRE, sketch 128 & +1.8 & [+1.4, +2.2] & -- \\
+N-MNIST & Rehearsal (20/class) & +1.7 & [+0.5, +2.8] & -- \\
+N-MNIST & HLOP-R (subspace refreshed) & +1.5 & [+1.0, +2.0] & -- \\
+N-MNIST & REWIRE, selective write (errors) & +1.5 & [+1.1, +1.8] & -- \\
+N-MNIST & Dual view, ridge readout & +1.3 & [+0.9, +1.8] & -- \\
+N-MNIST & REWIRE-gated, $\theta$=0.95 (ours) & +1.2 & [+0.9, +1.7] & -- \\
+N-MNIST & ReLU layer instead of LIF & +0.9 & [+0.5, +1.3] & -- \\
+N-MNIST & REWIRE, sketch 256 & +0.8 & [+0.3, +1.4] & -- \\
+N-MNIST & HLOP & +0.7 & [+0.4, +1.2] & -- \\
+SHD & Fine-tuning & +42.5 & [+38.7, +45.3] & -- \\
+SHD & EWC & +42.1 & [+39.1, +44.7] & -- \\
+SHD & Ridge on the inputs & +28.5 & [+25.8, +30.8] & -- \\
+SHD & HD bundling & +26.3 & [+25.8, +27.0] & -- \\
+SHD & HLOP, competence-gated & +20.4 & [+17.7, +22.5] & -- \\
+SHD & HLOP & +20.3 & [+18.0, +22.1] & -- \\
+SHD & Rehearsal (iso-memory) & +17.0 & [+14.7, +19.2] & -- \\
+SHD & HLOP-R (subspace refreshed) & +13.9 & [+13.0, +14.6] & -- \\
+SHD & RanPAC-style (ReLU, ridge) & +13.8 & [+10.6, +16.9] & -- \\
+SHD & REWIRE-v1, recursive solve & +11.8 & [+10.3, +13.3] & -- \\
+SHD & REWIRE-v1: sketch only, ridge & +11.8 & [+10.3, +13.3] & -- \\
+SHD & REWIRE-v1, selective write (random) & +11.4 & [+9.9, +12.9] & -- \\
+SHD & SLDA on the inputs & +11.3 & [+10.5, +12.3] & -- \\
+SHD & REWIRE-v1 gated & +10.6 & [+8.7, +12.4] & -- \\
+SHD & REWIRE-v1, selective write (errors) & +10.3 & [+8.6, +11.9] & -- \\
+SHD & Dual view, ridge readout & +10.3 & [+8.3, +12.0] & -- \\
+SHD & ReLU layer instead of LIF & +4.1 & [+2.7, +5.1] & -- \\
+SHD & REWIRE, sketch 128 & +4.1 & [+3.0, +4.9] & -- \\
+SHD & Rehearsal (20/class) & +3.6 & [+1.9, +5.5] & -- \\
+SHD & REWIRE, sketch 256 & +3.3 & [+2.0, +4.4] & -- \\
+SHD & Rehearsal, competence-gated & +2.6 & [+1.4, +3.8] & -- \\
+SHD & REWIRE, selective write (random) & +1.7 & [+1.1, +2.3] & -- \\
+SHD & Sketch only, LDA readout & +1.4 & [+0.6, +2.2] & -- \\
+SHD & REWIRE-gated (ours) & +1.2 & [+0.4, +1.9] & -- \\
+SHD & REWIRE-gated, Mahalanobis (ours) & +1.2 & [+0.4, +1.9] & -- \\
+SHD & REWIRE, selective write (errors) & +0.7 & [-0.1, +1.4] & -- \\
+SHD & REWIRE-gated, budget 128 (ours) & +0.3 & [-0.1, +0.9] & -- \\
+SHD & REWIRE-gated, $\theta$=0.95 (ours) & +0.2 & [-0.4, +0.6] & -- \\
+CIFAR-10 & EWC & +17.0 & [+13.5, +21.4] & -- \\
+CIFAR-10 & Fine-tuning & +16.9 & [+13.2, +21.5] & -- \\
+CIFAR-10 & HD bundling & +13.7 & [+12.3, +15.0] & -- \\
+CIFAR-10 & REWIRE-v1, selective write (random) & +10.9 & [+10.0, +11.7] & -- \\
+CIFAR-10 & REWIRE-v1 gated & +10.8 & [+9.5, +12.2] & -- \\
+CIFAR-10 & REWIRE-v1, selective write (errors) & +9.2 & [+8.6, +9.9] & -- \\
+CIFAR-10 & REWIRE-v1: sketch only, ridge & +7.6 & [+7.1, +8.3] & -- \\
+CIFAR-10 & REWIRE-v1, recursive solve & +7.6 & [+7.1, +8.3] & -- \\
+CIFAR-10 & RanPAC-style (ReLU, ridge) & +6.2 & [+5.7, +6.8] & -- \\
+CIFAR-10 & Dual view, ridge readout & +6.1 & [+5.6, +6.7] & -- \\
+CIFAR-10 & Rehearsal (20/class) & +4.2 & [+2.8, +5.7] & -- \\
+CIFAR-10 & HLOP, competence-gated & +4.2 & [+3.3, +5.2] & -- \\
+CIFAR-10 & Sketch only, LDA readout & +4.2 & [+3.6, +4.8] & -- \\
+CIFAR-10 & HLOP-R (subspace refreshed) & +4.0 & [+2.1, +5.8] & -- \\
+CIFAR-10 & REWIRE-gated (ours) & +3.6 & [+3.2, +4.1] & -- \\
+CIFAR-10 & REWIRE-gated, Mahalanobis (ours) & +3.4 & [+3.0, +3.7] & -- \\
+CIFAR-10 & Rehearsal, competence-gated & +3.0 & [+2.0, +4.1] & -- \\
+CIFAR-10 & REWIRE, selective write (random) & +2.6 & [+2.1, +3.2] & -- \\
+CIFAR-10 & HLOP & +2.5 & [+1.8, +3.6] & -- \\
+CIFAR-10 & REWIRE-gated, budget 128 (ours) & +2.1 & [+1.7, +2.4] & -- \\
+CIFAR-10 & REWIRE, selective write (errors) & +1.7 & [+1.2, +2.3] & -- \\
+CIFAR-10 & Ridge on the inputs & +0.9 & [+0.3, +1.5] & -- \\
+CIFAR-10 & REWIRE-gated, $\theta$=0.95 (ours) & +0.6 & [+0.3, +0.9] & -- \\
+CIFAR-10 & Rehearsal (iso-memory) & +0.3 & [-0.7, +1.3] & -- \\
+CIFAR-10 & ReLU layer instead of LIF & -0.3 & [-1.0, +0.3] & -- \\
+CIFAR-10 & REWIRE, sketch 256 & -0.8 & [-1.1, -0.6] & -- \\
+CIFAR-10 & SLDA on the inputs & -1.2 & [-1.6, -0.9] & -- \\
+CIFAR-10 & REWIRE, sketch 128 & -1.4 & [-1.8, -1.0] & -- \\
+CIFAR-100 & Fine-tuning & +54.0 & [+52.1, +56.0] & -- \\
+CIFAR-100 & EWC & +53.9 & [+52.1, +56.0] & -- \\
+CIFAR-100 & HD bundling & +19.8 & [+19.3, +20.4] & -- \\
+CIFAR-100 & HLOP-R (subspace refreshed) & +19.4 & [+18.4, +20.4] & -- \\
+CIFAR-100 & REWIRE-v1: sketch only, ridge & +15.8 & [+14.7, +17.1] & -- \\
+CIFAR-100 & REWIRE-v1, recursive solve & +15.8 & [+14.7, +17.1] & -- \\
+CIFAR-100 & REWIRE-v1 gated & +14.4 & [+13.4, +15.6] & -- \\
+CIFAR-100 & Rehearsal (iso-memory) & +13.9 & [+13.5, +14.2] & -- \\
+CIFAR-100 & REWIRE-v1, selective write (random) & +12.7 & [+12.0, +13.5] & -- \\
+CIFAR-100 & RanPAC-style (ReLU, ridge) & +12.2 & [+11.6, +12.9] & -- \\
+CIFAR-100 & REWIRE-v1, selective write (errors) & +12.2 & [+11.5, +12.9] & -- \\
+CIFAR-100 & HLOP & +10.6 & [+10.2, +11.0] & -- \\
+CIFAR-100 & HLOP, competence-gated & +10.3 & [+9.8, +10.8] & -- \\
+CIFAR-100 & Rehearsal (20/class) & +7.2 & [+6.7, +7.7] & -- \\
+CIFAR-100 & Rehearsal, competence-gated & +7.0 & [+6.7, +7.3] & -- \\
+CIFAR-100 & Sketch only, LDA readout & +6.8 & [+6.3, +7.2] & -- \\
+CIFAR-100 & Dual view, ridge readout & +4.6 & [+4.0, +5.2] & -- \\
+CIFAR-100 & Ridge on the inputs & +4.2 & [+3.6, +4.7] & -- \\
+CIFAR-100 & REWIRE, selective write (random) & +0.1 & [-0.2, +0.3] & -- \\
+CIFAR-100 & REWIRE-gated (ours) & +0.0 & [-0.0, +0.1] & -- \\
+CIFAR-100 & REWIRE-gated, Mahalanobis (ours) & +0.0 & [-0.0, +0.1] & -- \\
+CIFAR-100 & REWIRE-gated, $\theta$=0.95 (ours) & +0.0 & [+0.0, +0.1] & -- \\
+CIFAR-100 & REWIRE-gated, budget 128 (ours) & +0.0 & [+0.0, +0.0] & -- \\
+CIFAR-100 & REWIRE, selective write (errors) & -0.0 & [-0.1, +0.1] & -- \\
+CIFAR-100 & REWIRE, sketch 256 & -0.3 & [-0.4, -0.2] & -- \\
+CIFAR-100 & ReLU layer instead of LIF & -0.3 & [-0.4, -0.2] & -- \\
+CIFAR-100 & REWIRE, sketch 128 & -0.3 & [-0.4, -0.3] & -- \\
+CIFAR-100 & SLDA on the inputs & -0.7 & [-0.8, -0.5] & -- \\
+Tiny-ImageNet & Fine-tuning & +60.0 & [+59.3, +60.7] & -- \\
+Tiny-ImageNet & EWC & +59.9 & [+59.3, +60.6] & -- \\
+Tiny-ImageNet & HD bundling & +18.5 & [+18.1, +18.9] & -- \\
+Tiny-ImageNet & HLOP-R (subspace refreshed) & +15.4 & [+14.1, +16.6] & -- \\
+Tiny-ImageNet & REWIRE-v1: sketch only, ridge & +13.3 & [+12.7, +13.9] & -- \\
+Tiny-ImageNet & REWIRE-v1, recursive solve & +13.3 & [+12.7, +13.9] & -- \\
+Tiny-ImageNet & REWIRE-v1 gated & +11.2 & [+10.7, +11.7] & -- \\
+Tiny-ImageNet & REWIRE-v1, selective write (random) & +10.4 & [+9.9, +10.9] & -- \\
+Tiny-ImageNet & RanPAC-style (ReLU, ridge) & +10.3 & [+9.7, +10.9] & -- \\
+Tiny-ImageNet & Rehearsal (iso-memory) & +9.9 & [+9.7, +10.0] & -- \\
+Tiny-ImageNet & REWIRE-v1, selective write (errors) & +9.8 & [+9.4, +10.3] & -- \\
+Tiny-ImageNet & HLOP & +8.2 & [+7.5, +8.9] & -- \\
+Tiny-ImageNet & HLOP, competence-gated & +7.8 & [+7.1, +8.6] & -- \\
+Tiny-ImageNet & Rehearsal (20/class) & +6.7 & [+6.3, +7.1] & -- \\
+Tiny-ImageNet & Rehearsal, competence-gated & +6.2 & [+5.8, +6.7] & -- \\
+Tiny-ImageNet & Sketch only, LDA readout & +5.6 & [+5.1, +6.0] & -- \\
+Tiny-ImageNet & Dual view, ridge readout & +3.1 & [+2.8, +3.4] & -- \\
+Tiny-ImageNet & Ridge on the inputs & +2.7 & [+2.2, +3.3] & -- \\
+Tiny-ImageNet & REWIRE, selective write (random) & +0.1 & [-0.1, +0.3] & -- \\
+Tiny-ImageNet & REWIRE-gated (ours) & +0.1 & [-0.0, +0.2] & -- \\
+Tiny-ImageNet & REWIRE-gated, Mahalanobis (ours) & +0.1 & [-0.0, +0.2] & -- \\
+Tiny-ImageNet & REWIRE-gated, $\theta$=0.95 (ours) & +0.0 & [-0.0, +0.1] & -- \\
+Tiny-ImageNet & REWIRE-gated, budget 128 (ours) & -0.0 & [-0.0, +0.0] & -- \\
+Tiny-ImageNet & REWIRE, selective write (errors) & -0.1 & [-0.1, +0.0] & -- \\
+Tiny-ImageNet & ReLU layer instead of LIF & -0.2 & [-0.3, -0.1] & -- \\
+Tiny-ImageNet & REWIRE, sketch 256 & -0.4 & [-0.7, -0.2] & -- \\
+Tiny-ImageNet & SLDA on the inputs & -0.6 & [-0.9, -0.3] & -- \\
+Tiny-ImageNet & REWIRE, sketch 128 & -0.6 & [-0.8, -0.4] & -- \\
+\bottomrule
+\end{tabular}

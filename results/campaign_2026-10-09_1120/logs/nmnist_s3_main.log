@@ -1,0 +1,34 @@
+[data] N-MNIST from /home/ubuntu/data/nmnist/Train: 7000 samples, frames (6, 2, 34, 34)
+  rewire            s3 nmnist  none   | acc 0.90 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.65 (S_ctrl +1.00) RIF +0.008 | AUROC 0.97 | 176115 uJ 4216.1KB
+  rewire_gated      s3 nmnist  none   | acc 0.85 bwt -0.05 | recur 0.0/0 steps | S_AUR +0.47 (S_ctrl +1.00) RIF +0.007 | AUROC 0.96 | 70449 uJ 4216.1KB
+  rewire_gated_maha s3 nmnist  none   | acc 0.85 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.50 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 97951 uJ 4216.1KB
+  rewire_gated_t095 s3 nmnist  none   | acc 0.88 bwt -0.03 | recur 0.0/0 steps | S_AUR +0.60 (S_ctrl +1.00) RIF +0.008 | AUROC 0.96 | 105078 uJ 4216.1KB
+  rewire_gated_b128 s3 nmnist  none   | acc 0.89 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.59 (S_ctrl +1.00) RIF +0.007 | AUROC 0.96 | 110033 uJ 4216.1KB
+  rewire_v1         s3 nmnist  none   | acc 0.86 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.70 (S_ctrl +1.00) RIF +0.010 | AUROC 0.94 | 40630 uJ 1084.1KB
+  rewire_v1_gated   s3 nmnist  none   | acc 0.84 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.61 (S_ctrl +1.00) RIF +0.009 | AUROC 0.93 | 25024 uJ 1084.1KB
+  abl_sketch_lda    s3 nmnist  none   | acc 0.87 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.53 (S_ctrl +1.00) RIF +0.007 | AUROC 0.94 | 40630 uJ 1084.1KB
+  abl_dualview_ridge s3 nmnist  none   | acc 0.88 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.71 (S_ctrl +1.00) RIF +0.009 | AUROC 0.97 | 176115 uJ 4216.1KB
+  abl_width128      s3 nmnist  none   | acc 0.89 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.59 (S_ctrl +1.00) RIF +0.009 | AUROC 0.94 | 76899 uJ 1675.1KB
+  abl_width256      s3 nmnist  none   | acc 0.90 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.68 (S_ctrl +1.00) RIF +0.008 | AUROC 0.93 | 101817 uJ 2394.1KB
+  abl_select_errors s3 nmnist  none   | acc 0.89 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.61 (S_ctrl +1.00) RIF +0.007 | AUROC 0.96 | 168060 uJ 4216.1KB
+  abl_select_random s3 nmnist  none   | acc 0.88 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.60 (S_ctrl +1.00) RIF +0.007 | AUROC 0.96 | 168176 uJ 4216.1KB
+  abl_v1_select_errors s3 nmnist  none   | acc 0.86 bwt +0.01 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.010 | AUROC 0.93 | 38701 uJ 1084.1KB
+  abl_v1_select_random s3 nmnist  none   | acc 0.85 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.65 (S_ctrl +1.00) RIF +0.009 | AUROC 0.93 | 38732 uJ 1084.1KB
+  abl_v1_woodbury   s3 nmnist  none   | acc 0.86 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.70 (S_ctrl +1.00) RIF +0.010 | AUROC 0.94 | 37596 uJ 1084.1KB
+  ctrl_slda_input   s3 nmnist  none   | acc 0.88 bwt -0.03 | recur 0.0/0 steps | S_AUR +0.67 (S_ctrl +1.00) RIF +0.008 | AUROC 0.93 | 1269828 uJ 21151.3KB
+  ctrl_relu         s3 nmnist  none   | acc 0.90 bwt +0.01 | recur 0.0/0 steps | S_AUR +0.65 (S_ctrl +1.00) RIF +0.008 | AUROC 0.99 | 231550 uJ 4216.1KB
+  ranpac            s3 nmnist  none   | acc 0.87 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.75 (S_ctrl +1.00) RIF +0.011 | AUROC 1.00 | 96065 uJ 1084.1KB
+  ridge_input       s3 nmnist  none   | acc 0.81 bwt -0.08 | recur 0.0/0 steps | S_AUR +0.62 (S_ctrl +1.00) RIF +0.007 | AUROC 0.93 | 1269828 uJ 21151.3KB
+  hd_memory         s3 nmnist  none   | acc 0.77 bwt -0.07 | recur 0.0/0 steps | S_AUR +0.20 (S_ctrl +1.00) RIF +0.006 | AUROC 0.94 | 23179 uJ 20.7KB
+  hlop              s3 nmnist  none   | acc 0.90 bwt -0.00 | recur 40.0/40 steps | S_AUR +0.85 (S_ctrl +1.00) RIF +0.011 | AUROC 0.74 | 255710 uJ 978.5KB
+  hlop_adaptive     s3 nmnist  none   | acc 0.88 bwt -0.01 | recur 40.0/40 steps | S_AUR +0.83 (S_ctrl +1.00) RIF +0.010 | AUROC 0.72 | 504599 uJ 978.5KB
+  hlop_gated        s3 nmnist  none   | acc 0.88 bwt -0.01 | recur 3.3/40 steps | S_AUR +0.85 (S_ctrl +1.00) RIF +0.010 | AUROC 0.77 | 109309 uJ 978.5KB
+  replay            s3 nmnist  none   | acc 0.88 bwt -0.02 | recur 40.0/40 steps | S_AUR +0.84 (S_ctrl +1.00) RIF +0.009 | AUROC 0.89 | 341898 uJ 2168.8KB
+  replay_iso        s3 nmnist  none   | acc 0.84 bwt -0.06 | recur 40.0/40 steps | S_AUR +0.81 (S_ctrl +0.94) RIF +0.010 | AUROC 0.83 | 340304 uJ 1070.8KB
+  replay_gated      s3 nmnist  none   | acc 0.88 bwt -0.02 | recur 3.3/40 steps | S_AUR +0.83 (S_ctrl +1.00) RIF +0.013 | AUROC 0.85 | 97713 uJ 2168.8KB
+  ewc               s3 nmnist  none   | acc 0.40 bwt -0.56 | recur 40.0/40 steps | S_AUR +0.31 (S_ctrl +0.53) RIF +0.023 | AUROC 0.71 | 222923 uJ 18584.1KB
+  naive             s3 nmnist  none   | acc 0.40 bwt -0.56 | recur 40.0/40 steps | S_AUR +0.30 (S_ctrl +0.50) RIF +0.024 | AUROC 0.71 | 166943 uJ 0.0KB
+done: 29 runs in 613s
+[worker] nmnist seed 3 main: 29 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset nmnist --seed 3 --stage main --out results/results_2026-10-09_1120/parts/nmnist/main/s3 --data_root /home/ubuntu/data

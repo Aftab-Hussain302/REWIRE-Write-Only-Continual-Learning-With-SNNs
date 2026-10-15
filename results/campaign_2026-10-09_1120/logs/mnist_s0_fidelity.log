@@ -1,0 +1,23 @@
+[data] mnist: 60000 samples
+  fidelity split  naive        seed 0: acc 0.980 bwt -0.011 diag [1.0, 0.98, 1.0, 0.99, 0.98]
+  fidelity split  hlop         seed 0: acc 0.980 bwt +0.004 diag [1.0, 0.97, 0.98, 0.98, 0.95]
+  fidelity split  dsd_snn      seed 0: acc 0.980 bwt +0.000 diag [1.0, 0.96, 0.98, 1.0, 0.95]
+  fidelity split  ewc          seed 0: acc 0.983 bwt -0.006 diag [1.0, 0.98, 1.0, 0.99, 0.98]
+  fidelity pmnist naive        seed 0: acc 0.860 bwt -0.076 diag [0.91, 0.93, 0.92, 0.92, 0.92]
+  fidelity pmnist hlop         seed 0: acc 0.894 bwt -0.034 diag [0.91, 0.93, 0.92, 0.92, 0.92]
+  fidelity pmnist dsd_snn      seed 0: acc 0.641 bwt -0.280 diag [0.89, 0.86, 0.88, 0.86, 0.84]
+  fidelity pmnist ewc          seed 0: acc 0.884 bwt -0.042 diag [0.91, 0.92, 0.92, 0.91, 0.92]
+
+FIDELITY GATE. split = task-IL Split-MNIST (DSD-SNN's native protocol), pmnist = domain-IL Permuted MNIST (HLOP's native protocol).
+PASS = protection mechanism removes the forgetting naive shows: bwt >= -0.05 and acc >= 0.90 (split) / bwt >= -0.10 and acc >= 0.80 (pmnist)
+  split  naive        acc 0.980+/-0.000 bwt -0.011+/-0.000  n/a (reference)
+  split  hlop         acc 0.980+/-0.000 bwt +0.004+/-0.000  PASS
+  split  dsd_snn      acc 0.980+/-0.000 bwt +0.000+/-0.000  PASS
+  split  ewc          acc 0.983+/-0.000 bwt -0.006+/-0.000  PASS
+  pmnist naive        acc 0.860+/-0.000 bwt -0.076+/-0.000  n/a (reference)
+  pmnist hlop         acc 0.894+/-0.000 bwt -0.034+/-0.000  PASS
+  pmnist dsd_snn      acc 0.641+/-0.000 bwt -0.280+/-0.000  FAIL
+  pmnist ewc          acc 0.884+/-0.000 bwt -0.042+/-0.000  PASS
+  (saved results/results_2026-10-09_1120/parts/mnist/fidelity/s0/fidelity_gate.csv)
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset mnist --seed 0 --stage fidelity --out results/results_2026-10-09_1120/parts/mnist/fidelity/s0 --data_root /home/ubuntu/data

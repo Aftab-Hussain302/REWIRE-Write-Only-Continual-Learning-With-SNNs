@@ -1,0 +1,18 @@
+[data] mnist: 60000 samples
+  rewire            s4 mnist   none   | acc 0.91 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.69 (S_ctrl +1.00) RIF +0.013 | AUROC 1.00 | 80951 uJ 4216.1KB
+  rewire_gated      s4 mnist   none   | acc 0.88 bwt -0.03 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.010 | AUROC 1.00 | 49694 uJ 4216.1KB
+  rewire_v1         s4 mnist   none   | acc 0.87 bwt +0.01 | recur 0.0/0 steps | S_AUR +0.67 (S_ctrl +1.00) RIF +0.015 | AUROC 0.98 | 25796 uJ 1084.1KB
+  ctrl_slda_input   s4 mnist   none   | acc 0.87 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.64 (S_ctrl +1.00) RIF +0.011 | AUROC 1.00 | 27462 uJ 2493.0KB
+  ranpac            s4 mnist   none   | acc 0.90 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.74 (S_ctrl +1.00) RIF +0.012 | AUROC 0.96 | 25745 uJ 1084.1KB
+  ridge_input       s4 mnist   none   | acc 0.82 bwt -0.04 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.009 | AUROC 1.00 | 27462 uJ 2493.0KB
+  hd_memory         s4 mnist   none   | acc 0.78 bwt -0.05 | recur 0.0/0 steps | S_AUR +0.30 (S_ctrl +1.00) RIF +0.004 | AUROC 0.98 | 17377 uJ 20.7KB
+  naive             s4 mnist   none   | acc 0.57 bwt -0.40 | recur 40.0/40 steps | S_AUR +0.46 (S_ctrl +0.56) RIF +0.026 | AUROC 0.48 | 200910 uJ 0.0KB
+  ewc               s4 mnist   none   | acc 0.56 bwt -0.41 | recur 40.0/40 steps | S_AUR +0.46 (S_ctrl +0.56) RIF +0.026 | AUROC 0.48 | 226760 uJ 6360.1KB
+  replay            s4 mnist   none   | acc 0.91 bwt -0.04 | recur 40.0/40 steps | S_AUR +0.86 (S_ctrl +1.00) RIF +0.008 | AUROC 0.91 | 400364 uJ 491.2KB
+  replay_iso        s4 mnist   none   | acc 0.92 bwt -0.02 | recur 40.0/40 steps | S_AUR +0.87 (S_ctrl +1.00) RIF +0.008 | AUROC 0.95 | 400355 uJ 1083.8KB
+  hlop              s4 mnist   none   | acc 0.89 bwt +0.03 | recur 40.0/40 steps | S_AUR +0.81 (S_ctrl +1.00) RIF +0.013 | AUROC 0.95 | 234254 uJ 501.0KB
+  hlop_adaptive     s4 mnist   none   | acc 0.87 bwt +0.01 | recur 40.0/40 steps | S_AUR +0.79 (S_ctrl +1.00) RIF +0.012 | AUROC 0.93 | 276734 uJ 501.0KB
+done: 13 runs in 169s
+[worker] mnist seed 4 recur: 13 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset mnist --seed 4 --stage recur --out results/results_2026-10-09_1120/parts/mnist/recur/n8/s4 --data_root /home/ubuntu/data --n-recur 8

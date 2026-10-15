@@ -1,0 +1,35 @@
+[data] cifar10: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s2 cifar10 none   | acc 0.82 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.56 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 149458 uJ 4216.1KB
+  rewire_gated      s2 cifar10 none   | acc 0.77 bwt -0.05 | recur 0.0/0 steps | S_AUR +0.37 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 64782 uJ 4216.1KB
+  rewire_gated_maha s2 cifar10 none   | acc 0.78 bwt -0.04 | recur 0.0/0 steps | S_AUR +0.40 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 103336 uJ 4216.1KB
+  rewire_gated_t095 s2 cifar10 none   | acc 0.81 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.53 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 126984 uJ 4216.1KB
+  rewire_gated_b128 s2 cifar10 none   | acc 0.80 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.47 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 86997 uJ 4216.1KB
+  rewire_v1         s2 cifar10 none   | acc 0.74 bwt +0.01 | recur 0.0/0 steps | S_AUR +0.67 (S_ctrl +1.00) RIF +0.008 | AUROC 0.99 | 46122 uJ 1084.1KB
+  rewire_v1_gated   s2 cifar10 none   | acc 0.72 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.56 (S_ctrl +1.00) RIF +0.009 | AUROC 0.99 | 35913 uJ 1084.1KB
+  abl_sketch_lda    s2 cifar10 none   | acc 0.78 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.45 (S_ctrl +1.00) RIF +0.007 | AUROC 0.99 | 46122 uJ 1084.1KB
+  abl_dualview_ridge s2 cifar10 none   | acc 0.76 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 149458 uJ 4216.1KB
+  abl_width128      s2 cifar10 none   | acc 0.83 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.52 (S_ctrl +1.00) RIF +0.008 | AUROC 1.00 | 50242 uJ 1675.1KB
+  abl_width256      s2 cifar10 none   | acc 0.82 bwt -0.00 | recur 0.0/0 steps | S_AUR +0.51 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 75160 uJ 2394.1KB
+  abl_select_errors s2 cifar10 none   | acc 0.80 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.51 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 141798 uJ 4216.1KB
+  abl_select_random s2 cifar10 none   | acc 0.79 bwt -0.03 | recur 0.0/0 steps | S_AUR +0.46 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 141914 uJ 4216.1KB
+  abl_v1_select_errors s2 cifar10 none   | acc 0.72 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.55 (S_ctrl +1.00) RIF +0.008 | AUROC 0.99 | 44376 uJ 1084.1KB
+  abl_v1_select_random s2 cifar10 none   | acc 0.72 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.56 (S_ctrl +1.00) RIF +0.007 | AUROC 0.99 | 44428 uJ 1084.1KB
+  abl_v1_woodbury   s2 cifar10 none   | acc 0.74 bwt +0.01 | recur 0.0/0 steps | S_AUR +0.67 (S_ctrl +1.00) RIF +0.008 | AUROC 0.99 | 43088 uJ 1084.1KB
+  ctrl_slda_input   s2 cifar10 none   | acc 0.83 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.47 (S_ctrl +1.00) RIF +0.005 | AUROC 1.00 | 17529 uJ 1084.1KB
+  ctrl_relu         s2 cifar10 none   | acc 0.82 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.55 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 149343 uJ 4216.1KB
+  ranpac            s2 cifar10 none   | acc 0.75 bwt +0.04 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.011 | AUROC 1.00 | 46007 uJ 1084.1KB
+  ridge_input       s2 cifar10 none   | acc 0.81 bwt +0.07 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 17529 uJ 1084.1KB
+  hd_memory         s2 cifar10 none   | acc 0.70 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +1.00) RIF +0.003 | AUROC 0.99 | 28671 uJ 20.7KB
+  hlop              s2 cifar10 none   | acc 0.79 bwt -0.10 | recur 40.0/40 steps | S_AUR +0.75 (S_ctrl +1.00) RIF +0.004 | AUROC 0.83 | 308518 uJ 416.0KB
+  hlop_adaptive     s2 cifar10 none   | acc 0.76 bwt -0.13 | recur 40.0/40 steps | S_AUR +0.71 (S_ctrl +0.90) RIF +0.001 | AUROC 0.83 | 414339 uJ 416.0KB
+  hlop_gated        s2 cifar10 none   | acc 0.78 bwt -0.11 | recur 10.0/40 steps | S_AUR +0.74 (S_ctrl +1.00) RIF +0.003 | AUROC 0.82 | 142410 uJ 416.0KB
+  replay            s2 cifar10 none   | acc 0.79 bwt -0.14 | recur 40.0/40 steps | S_AUR +0.69 (S_ctrl +0.91) RIF +0.002 | AUROC 0.62 | 552165 uJ 321.2KB
+  replay_iso        s2 cifar10 none   | acc 0.81 bwt -0.09 | recur 40.0/40 steps | S_AUR +0.70 (S_ctrl +1.00) RIF +0.005 | AUROC 0.83 | 552177 uJ 1082.2KB
+  replay_gated      s2 cifar10 none   | acc 0.79 bwt -0.13 | recur 13.3/40 steps | S_AUR +0.70 (S_ctrl +1.00) RIF +0.010 | AUROC 0.65 | 264683 uJ 321.2KB
+  ewc               s2 cifar10 none   | acc 0.70 bwt -0.26 | recur 40.0/40 steps | S_AUR +0.66 (S_ctrl +0.67) RIF +0.015 | AUROC 0.45 | 307558 uJ 4184.1KB
+  naive             s2 cifar10 none   | acc 0.70 bwt -0.26 | recur 40.0/40 steps | S_AUR +0.66 (S_ctrl +0.58) RIF +0.015 | AUROC 0.44 | 271850 uJ 0.0KB
+done: 29 runs in 438s
+[worker] cifar10 seed 2 main: 29 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar10 --seed 2 --stage main --out results/results_2026-10-09_1120/parts/cifar10/main/s2 --data_root /home/ubuntu/data

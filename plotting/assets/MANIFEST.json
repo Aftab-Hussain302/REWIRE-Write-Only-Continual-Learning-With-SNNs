@@ -1,0 +1,75 @@
+{
+ "command": "scripts/run_all.py --data_root /home/ubuntu/data",
+ "args": {
+  "data_root": "/home/ubuntu/data",
+  "out": "results",
+  "resume": null,
+  "workers": 5,
+  "datasets": [
+   "mnist",
+   "cifar10",
+   "nmnist",
+   "shd",
+   "cifar100",
+   "tinyimagenet"
+  ],
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "smoke": false,
+  "no_sweeps": false,
+  "no_fidelity": false,
+  "no_merge": false,
+  "set": []
+ },
+ "code_hash": "ea3402a6248ecf1a78fc0522e61b8abfc281167b03254f62285f02d6eea070ba",
+ "files": {
+  "rewire/__init__.py": "192bec9796a701413acb2e34da2ab658fc326ced6a800ef86d66bc6f56b7175a",
+  "rewire/baselines/hlop_official/__init__.py": "a4b0ef532274a6ef87b4610a6809f86347076ab3fcf5db33f2f0bba75dacf97b",
+  "rewire/baselines/hlop_official/hlop_module.py": "cc12fa88abc39b0bdb3985066cd9902dc1c73f49a5d1f949342dd47d2ace7faf",
+  "rewire/campaign.py": "40732289f9cf80d7cd57f0b97d92e86b2932ce973f32a7cadacf45553386f1e4",
+  "rewire/configure.py": "305afde3d2861143dc387423083dfe50bb6d4017213935baca77c561492f300f",
+  "rewire/dataloader/__init__.py": "e945a1416b5c32435d12db9024a000bc858e957d66fc9f645f33787a6ef8f387",
+  "rewire/dataloader/loaders.py": "c49ef0532ecb41179a7bf2ad21e37b5da155a2b3b5077548e7f8b0b0fae8a2be",
+  "rewire/engine.py": "997b69b035aad0ffa64b1a6a2b32563cd4f1d71dce5a63ae50df977590b64eb1",
+  "rewire/fidelity.py": "be9f5fbee1bb3ea47cb05330643a79504fe0b35b1e9b613af39ddbf0b93604dd",
+  "rewire/metrics/__init__.py": "7dc9842ebc6ccb7335d4a7a0a3634cc55622d8da286d73515972407e8be84475",
+  "rewire/metrics/stats.py": "71132446d2a81d3df751dc84db415c6fd42b10994be910799c503bf7941bf6e1",
+  "rewire/models/__init__.py": "d077d3556df10e99fe87131cc23780800738a0ecc6a3406bb330d5999e1ddca5",
+  "rewire/models/arms.py": "9eb7a45a9c5cacce4463a7b619e24fccc08c33e192c82abb6d6b227afb67555e",
+  "rewire/modules/__init__.py": "d9f29cbac662c1c2f130b8e3bf37ebd895e765ca0e4486a91587f504541265ad",
+  "rewire/modules/neuron.py": "afb273ecda53d0b1a25f8e73c101ed0e24661b92986697625ff78884e465e025",
+  "rewire/preflight.py": "c8e46a96098efe2a86d908c36df708b7aafe3659362d9f0d7e2c8dc93f0edbfd",
+  "rewire/results_io.py": "4f2a2595abe4d4101403c79fef36704b996ac1a6136c96825aac9c1b05b24f98",
+  "rewire/utils/__init__.py": "fc92605748f2673101ce9fe9c0a1f4fb318764a8ca207c4035beef54343b5483",
+  "rewire/utils/plotting.py": "6a923978f279d8a734c5f664059cf2769213f5bc676d316f3bbf71b3437550a3",
+  "rewire/worker.py": "d7e271289151b2f4cfa702099ef71c62f563f3821fa81606c1ce2d1d12ad83ad",
+  "run_campaign.py": "1aaf814c1976551af672eee7ac8bc9f82622b9afbe5a2b54b23201eddf3e1cdc",
+  "scripts/merge_results.py": "cfd1d7a6d58b400cf4c7ca1cb60a9881d24717064c4ae2c2b0968a5bdee96305",
+  "scripts/prepare_data.py": "2478f9276dd06721124a3119bb95b94a6da2401ddae4f783ffaf44fb41a866eb",
+  "scripts/run_all.py": "03d2a0b8bbe379f4eaa695dbe5a4927b2aa6e0b9c6627def3e6bfc68bc9660b7",
+  "selftest.py": "4e6b255094d5af17c9882565f1537df7cbc3bda0f722f0d400db1d13deb0cae6",
+  "tests/test_memory.py": "75e664d5134e3c41ce765b1808e53711a93e2a5772e67924eb16ff60c1d7df8c"
+ },
+ "units": 159,
+ "datasets": [
+  "mnist",
+  "cifar10",
+  "nmnist",
+  "shd",
+  "cifar100",
+  "tinyimagenet"
+ ],
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "started": "2026-10-09T11:20:11"
+}

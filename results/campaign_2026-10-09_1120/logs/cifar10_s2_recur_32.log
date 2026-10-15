@@ -1,0 +1,19 @@
+[data] cifar10: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s2 cifar10 none   | acc 0.83 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.43 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 188139 uJ 4216.1KB
+  rewire_gated      s2 cifar10 none   | acc 0.78 bwt -0.03 | recur 0.0/0 steps | S_AUR +0.31 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 87085 uJ 4216.1KB
+  rewire_v1         s2 cifar10 none   | acc 0.76 bwt +0.04 | recur 0.0/0 steps | S_AUR +0.63 (S_ctrl +1.00) RIF +0.007 | AUROC 0.99 | 58098 uJ 1084.1KB
+  ctrl_slda_input   s2 cifar10 none   | acc 0.84 bwt +0.03 | recur 0.0/0 steps | S_AUR +0.38 (S_ctrl +1.00) RIF +0.007 | AUROC 1.00 | 22066 uJ 1084.1KB
+  ranpac            s2 cifar10 none   | acc 0.76 bwt +0.07 | recur 0.0/0 steps | S_AUR +0.61 (S_ctrl +1.00) RIF +0.008 | AUROC 1.00 | 57952 uJ 1084.1KB
+  ridge_input       s2 cifar10 none   | acc 0.82 bwt +0.11 | recur 0.0/0 steps | S_AUR +0.54 (S_ctrl +1.00) RIF +0.006 | AUROC 1.00 | 22066 uJ 1084.1KB
+  hd_memory         s2 cifar10 none   | acc 0.70 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.05 (S_ctrl +0.33) RIF +0.003 | AUROC 0.99 | 36130 uJ 20.7KB
+  naive             s2 cifar10 none   | acc 0.59 bwt -0.37 | recur 40.0/40 steps | S_AUR +0.55 (S_ctrl +0.17) RIF +0.008 | AUROC 0.47 | 341870 uJ 0.0KB
+  ewc               s2 cifar10 none   | acc 0.59 bwt -0.37 | recur 40.0/40 steps | S_AUR +0.58 (S_ctrl +0.25) RIF +0.008 | AUROC 0.46 | 386942 uJ 4184.1KB
+  replay            s2 cifar10 none   | acc 0.77 bwt -0.15 | recur 40.0/40 steps | S_AUR +0.65 (S_ctrl +1.00) RIF -0.002 | AUROC 0.73 | 696957 uJ 321.2KB
+  replay_iso        s2 cifar10 none   | acc 0.81 bwt -0.10 | recur 40.0/40 steps | S_AUR +0.61 (S_ctrl +1.00) RIF +0.002 | AUROC 0.88 | 696981 uJ 1082.2KB
+  hlop              s2 cifar10 none   | acc 0.79 bwt -0.10 | recur 40.0/40 steps | S_AUR +0.68 (S_ctrl +1.00) RIF +0.001 | AUROC 0.86 | 383194 uJ 416.0KB
+  hlop_adaptive     s2 cifar10 none   | acc 0.78 bwt -0.11 | recur 40.0/40 steps | S_AUR +0.66 (S_ctrl +0.90) RIF -0.001 | AUROC 0.83 | 524311 uJ 416.0KB
+done: 13 runs in 372s
+[worker] cifar10 seed 2 recur: 13 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar10 --seed 2 --stage recur --out results/results_2026-10-09_1120/parts/cifar10/recur/n32/s2 --data_root /home/ubuntu/data --n-recur 32

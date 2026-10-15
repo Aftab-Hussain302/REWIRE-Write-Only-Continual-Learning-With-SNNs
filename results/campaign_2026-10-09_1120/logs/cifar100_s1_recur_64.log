@@ -1,0 +1,17 @@
+[data] cifar100: 50000 samples
+[data] pretrained ResNet-18 features from cache: (50000, 512)
+  rewire            s1 cifar100 none   | acc 0.64 bwt -0.06 | recur 0.0/0 steps | S_AUR -0.17 (S_ctrl +1.00) RIF +0.006 | AUROC 0.92 | 832130 uJ 5296.8KB
+  rewire_gated      s1 cifar100 none   | acc 0.64 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.09 (S_ctrl +1.00) RIF +0.006 | AUROC 0.91 | 677062 uJ 5296.8KB
+  rewire_v1         s1 cifar100 none   | acc 0.48 bwt -0.00 | recur 0.0/0 steps | S_AUR -0.01 (S_ctrl +1.00) RIF +0.028 | AUROC 0.91 | 255754 uJ 1624.8KB
+  ctrl_slda_input   s1 cifar100 none   | acc 0.65 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.22 (S_ctrl +1.00) RIF +0.005 | AUROC 0.90 | 118131 uJ 1624.8KB
+  ranpac            s1 cifar100 none   | acc 0.52 bwt -0.01 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +0.85) RIF +0.027 | AUROC 0.90 | 250332 uJ 1624.8KB
+  ridge_input       s1 cifar100 none   | acc 0.59 bwt -0.02 | recur 0.0/0 steps | S_AUR -0.04 (S_ctrl +0.89) RIF +0.022 | AUROC 0.90 | 118131 uJ 1624.8KB
+  hd_memory         s1 cifar100 none   | acc 0.45 bwt -0.13 | recur 0.0/0 steps | S_AUR -0.34 (S_ctrl +1.00) RIF +0.000 | AUROC 0.91 | 140891 uJ 206.6KB
+  naive             s1 cifar100 none   | acc 0.10 bwt -0.85 | recur 40.0/40 steps | S_AUR +0.25 (S_ctrl +0.52) RIF +0.070 | AUROC 0.52 | 1327767 uJ 0.0KB
+  replay            s1 cifar100 none   | acc 0.57 bwt -0.34 | recur 40.0/40 steps | S_AUR +0.50 (S_ctrl +0.63) RIF -0.004 | AUROC 0.69 | 2757374 uJ 3212.5KB
+  replay_iso        s1 cifar100 none   | acc 0.51 bwt -0.42 | recur 40.0/40 steps | S_AUR +0.43 (S_ctrl +0.63) RIF +0.002 | AUROC 0.59 | 2755642 uJ 1624.3KB
+  hlop              s1 cifar100 none   | acc 0.54 bwt -0.11 | recur 40.0/40 steps | S_AUR +0.13 (S_ctrl +1.00) RIF +0.018 | AUROC 0.55 | 3593815 uJ 3872.0KB
+done: 11 runs in 1505s
+[worker] cifar100 seed 1 recur: 11 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset cifar100 --seed 1 --stage recur --out results/results_2026-10-09_1120/parts/cifar100/recur/n64/s1 --data_root /home/ubuntu/data --n-recur 64

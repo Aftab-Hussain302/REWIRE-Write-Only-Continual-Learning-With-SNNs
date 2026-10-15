@@ -1,0 +1,64 @@
+[data] Tiny-ImageNet-200 from /home/ubuntu/data/tiny-imagenet-200: 100000 samples at 64x64, 200 classes (uint8, 1.2 GB)
+[data] pretrained ResNet-18 features from cache: (100000, 512)
+[data] small dataset: 331 train / 100 test per class
+  rewire            s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.02 (S_ctrl -0.15) RIF +0.006 | AUROC 0.98 | 656409 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated      s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.00 (S_ctrl +0.25) RIF +0.006 | AUROC 0.98 | 588906 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated_maha s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.00 (S_ctrl +0.25) RIF +0.006 | AUROC 0.97 | 771193 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated_t095 s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.01 (S_ctrl +0.25) RIF +0.006 | AUROC 0.98 | 640175 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_gated_b128 s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.03 (S_ctrl +0.28) RIF +0.006 | AUROC 0.98 | 659403 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_v1         s2 tinyimagenet none   | acc 0.59 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.08 (S_ctrl +0.15) RIF +0.028 | AUROC 0.98 | 200355 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  rewire_v1_gated   s2 tinyimagenet none   | acc 0.62 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.10 (S_ctrl +0.33) RIF +0.027 | AUROC 0.98 | 188481 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_sketch_lda    s2 tinyimagenet none   | acc 0.67 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.08 (S_ctrl +1.00) RIF +0.005 | AUROC 0.98 | 200355 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_dualview_ridge s2 tinyimagenet none   | acc 0.69 bwt +0.00 | recur 0.0/0 steps | S_AUR +0.11 (S_ctrl +0.54) RIF +0.018 | AUROC 0.98 | 656409 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_width128      s2 tinyimagenet none   | acc 0.72 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.10 (S_ctrl +0.12) RIF +0.005 | AUROC 0.98 | 239465 uJ 3101.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_width256      s2 tinyimagenet none   | acc 0.72 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.07 (S_ctrl +0.25) RIF +0.005 | AUROC 0.98 | 348004 uJ 4105.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_select_errors s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR +0.00 (S_ctrl +0.21) RIF +0.007 | AUROC 0.98 | 652073 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_select_random s2 tinyimagenet none   | acc 0.72 bwt -0.06 | recur 0.0/0 steps | S_AUR -0.01 (S_ctrl -0.14) RIF +0.006 | AUROC 0.98 | 652160 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_v1_select_errors s2 tinyimagenet none   | acc 0.62 bwt +0.03 | recur 0.0/0 steps | S_AUR +0.11 (S_ctrl +0.33) RIF +0.028 | AUROC 0.98 | 199539 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_v1_select_random s2 tinyimagenet none   | acc 0.62 bwt +0.02 | recur 0.0/0 steps | S_AUR +0.13 (S_ctrl +0.20) RIF +0.028 | AUROC 0.98 | 199569 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  abl_v1_woodbury   s2 tinyimagenet none   | acc 0.59 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.08 (S_ctrl +0.15) RIF +0.028 | AUROC 0.98 | 168628 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ctrl_slda_input   s2 tinyimagenet none   | acc 0.72 bwt -0.08 | recur 0.0/0 steps | S_AUR -0.11 (S_ctrl +0.04) RIF +0.004 | AUROC 0.99 | 105836 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ctrl_relu         s2 tinyimagenet none   | acc 0.72 bwt -0.07 | recur 0.0/0 steps | S_AUR -0.01 (S_ctrl +0.15) RIF +0.007 | AUROC 0.99 | 649639 uJ 6497.6KB
+[data] small dataset: 331 train / 100 test per class
+  ranpac            s2 tinyimagenet none   | acc 0.62 bwt -0.01 | recur 0.0/0 steps | S_AUR +0.04 (S_ctrl +0.97) RIF +0.025 | AUROC 0.99 | 193584 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  ridge_input       s2 tinyimagenet none   | acc 0.68 bwt -0.02 | recur 0.0/0 steps | S_AUR +0.08 (S_ctrl +0.97) RIF +0.019 | AUROC 0.99 | 105836 uJ 2225.6KB
+[data] small dataset: 331 train / 100 test per class
+  hd_memory         s2 tinyimagenet none   | acc 0.54 bwt -0.12 | recur 0.0/0 steps | S_AUR -0.42 (S_ctrl +1.00) RIF +0.000 | AUROC 0.98 | 98838 uJ 413.3KB
+[data] small dataset: 331 train / 100 test per class
+  hlop              s2 tinyimagenet none   | acc 0.64 bwt -0.08 | recur 40.0/40 steps | S_AUR +0.19 (S_ctrl +0.37) RIF +0.017 | AUROC 0.83 | 2948097 uJ 3872.0KB
+[data] small dataset: 331 train / 100 test per class
+  hlop_adaptive     s2 tinyimagenet none   | acc 0.58 bwt -0.13 | recur 40.0/40 steps | S_AUR +0.16 (S_ctrl +0.54) RIF +0.017 | AUROC 0.83 | 3604725 uJ 3872.0KB
+[data] small dataset: 331 train / 100 test per class
+  hlop_gated        s2 tinyimagenet none   | acc 0.64 bwt -0.08 | recur 12.5/40 steps | S_AUR +0.19 (S_ctrl +0.43) RIF +0.016 | AUROC 0.82 | 2777702 uJ 3872.0KB
+[data] small dataset: 331 train / 100 test per class
+  replay            s2 tinyimagenet none   | acc 0.65 bwt -0.27 | recur 40.0/40 steps | S_AUR +0.62 (S_ctrl +0.66) RIF +0.002 | AUROC 0.86 | 1937816 uJ 3212.5KB
+[data] small dataset: 331 train / 100 test per class
+  replay_iso        s2 tinyimagenet none   | acc 0.62 bwt -0.31 | recur 40.0/40 steps | S_AUR +0.58 (S_ctrl +0.56) RIF +0.005 | AUROC 0.86 | 1937146 uJ 2224.7KB
+[data] small dataset: 331 train / 100 test per class
+  replay_gated      s2 tinyimagenet none   | acc 0.65 bwt -0.27 | recur 17.5/40 steps | S_AUR +0.63 (S_ctrl +0.63) RIF +0.005 | AUROC 0.85 | 1754453 uJ 3212.5KB
+[data] small dataset: 331 train / 100 test per class
+  ewc               s2 tinyimagenet none   | acc 0.13 bwt -0.84 | recur 40.0/40 steps | S_AUR +0.24 (S_ctrl +0.37) RIF +0.074 | AUROC 0.36 | 1054753 uJ 5705.6KB
+[data] small dataset: 331 train / 100 test per class
+  naive             s2 tinyimagenet none   | acc 0.12 bwt -0.85 | recur 40.0/40 steps | S_AUR +0.25 (S_ctrl +0.38) RIF +0.074 | AUROC 0.38 | 925264 uJ 0.0KB
+done: 29 runs in 2971s
+[worker] tinyimagenet seed 2 main: 29 rows
+
+/home/ubuntu/rewire-review/.venv/bin/python3 -m rewire.worker --dataset tinyimagenet --seed 2 --stage main --out results/results_2026-10-09_1120/parts/tinyimagenet/main/s2 --data_root /home/ubuntu/data

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+results/results_*/
+results/smoke_*/
+results/dev/
+results/colab_demo/
+results/*.zip
+results/**/rows.json
+plotting/assets_rebuilt/
+*.part
+.DS_Store
+results_selftest/

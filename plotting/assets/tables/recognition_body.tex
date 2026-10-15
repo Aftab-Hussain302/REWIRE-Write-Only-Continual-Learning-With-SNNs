@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & MNIST & N-MNIST & SHD & CIFAR-10 & CIFAR-100 & Tiny-ImageNet \\
+\midrule
+REWIRE (ours) & \underline{0.99{\tiny$\pm$0.01}} & \underline{0.92{\tiny$\pm$0.04}} & 0.67{\tiny$\pm$0.01} & 0.99{\tiny$\pm$0.02} & 0.92{\tiny$\pm$0.01} & \underline{0.96{\tiny$\pm$0.02}} \\
+REWIRE-gated (ours) & 0.99{\tiny$\pm$0.01} & 0.91{\tiny$\pm$0.03} & 0.67{\tiny$\pm$0.01} & 0.99{\tiny$\pm$0.02} & \underline{0.92{\tiny$\pm$0.01}} & 0.96{\tiny$\pm$0.02} \\
+SLDA on the inputs & \textbf{0.99{\tiny$\pm$0.01}} & 0.89{\tiny$\pm$0.04} & 0.63{\tiny$\pm$0.01} & \textbf{1.00{\tiny$\pm$0.01}} & \textbf{0.92{\tiny$\pm$0.02}} & \textbf{0.97{\tiny$\pm$0.01}} \\
+RanPAC-style (ReLU, ridge) & 0.99{\tiny$\pm$0.02} & \textbf{0.95{\tiny$\pm$0.05}} & \underline{0.77{\tiny$\pm$0.04}} & \underline{0.99{\tiny$\pm$0.02}} & 0.91{\tiny$\pm$0.01} & 0.96{\tiny$\pm$0.01} \\
+HLOP & 0.94{\tiny$\pm$0.07} & 0.75{\tiny$\pm$0.05} & 0.54{\tiny$\pm$0.08} & 0.82{\tiny$\pm$0.08} & 0.57{\tiny$\pm$0.09} & 0.73{\tiny$\pm$0.09} \\
+Rehearsal (20/class) & 0.93{\tiny$\pm$0.06} & 0.90{\tiny$\pm$0.05} & 0.77{\tiny$\pm$0.05} & 0.68{\tiny$\pm$0.12} & 0.64{\tiny$\pm$0.09} & 0.81{\tiny$\pm$0.03} \\
+Rehearsal (iso-memory) & 0.95{\tiny$\pm$0.07} & 0.83{\tiny$\pm$0.07} & \textbf{0.80{\tiny$\pm$0.04}} & 0.82{\tiny$\pm$0.10} & 0.55{\tiny$\pm$0.10} & 0.76{\tiny$\pm$0.06} \\
+EWC & 0.66{\tiny$\pm$0.05} & 0.61{\tiny$\pm$0.14} & 0.67{\tiny$\pm$0.10} & 0.47{\tiny$\pm$0.11} & 0.46{\tiny$\pm$0.09} & 0.38{\tiny$\pm$0.05} \\
+Fine-tuning & 0.65{\tiny$\pm$0.04} & 0.62{\tiny$\pm$0.15} & 0.68{\tiny$\pm$0.09} & 0.47{\tiny$\pm$0.11} & 0.46{\tiny$\pm$0.07} & 0.41{\tiny$\pm$0.05} \\
+\bottomrule
+\end{tabular}

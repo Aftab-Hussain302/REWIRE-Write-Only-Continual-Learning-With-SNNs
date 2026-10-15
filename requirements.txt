@@ -1,0 +1,10 @@
+torch>=2.1
+torchvision>=0.16
+numpy
+pandas
+scikit-learn
+matplotlib
+pillow
+h5py
+tabulate
+pytest

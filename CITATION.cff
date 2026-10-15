@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code or the released records, please cite the paper."
+title: "REWIRE: Write-Only Continual Learning for Recurring Classes in Spiking Neural Networks"
+authors:
+  - family-names: Hussain
+    given-names: Aftab
+    affiliation: "Institute of Pervasive Computing, Johannes Kepler University Linz"
+    email: aftab.hussain@jku.at
+  - family-names: Ferscha
+    given-names: Alois
+    affiliation: "Institute of Pervasive Computing, Johannes Kepler University Linz"
+    email: ferscha@pervasive.jku.at
+year: 2026
+license: Apache-2.0
+repository-code: "https://github.com/Aftab-Hussain302/REWIRE-Write-Only-Continual-Learning-for-Recurring-Classes-in-Spiking-Neural-Networks"
+preferred-citation:
+  type: conference-paper
+  title: "REWIRE: Write-Only Continual Learning for Recurring Classes in Spiking Neural Networks"
+  authors:
+    - family-names: Hussain
+      given-names: Aftab
+    - family-names: Ferscha
+      given-names: Alois
+  conference:
+    name: "Neuro-Inspired Computational Elements Conference (NICE)"
+  year: 2027
+  notes: "under review"

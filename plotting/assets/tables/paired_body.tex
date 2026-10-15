@@ -1,0 +1,34 @@
+\begin{tabular}{lrrrrr}
+\toprule
+REWIRE minus & mean diff. (pts) & 95\% CI & wins & $p$ (Holm) & pairs \\
+\midrule
+Fine-tuning & +37.8 & [+31.6, +43.9] & 100\% & 0.000* & 30 \\
+EWC & +37.6 & [+31.5, +43.8] & 100\% & 0.000* & 30 \\
+HD bundling & +17.9 & [+16.3, +19.6] & 100\% & 0.000* & 30 \\
+REWIRE-v1 gated & +10.4 & [+9.5, +11.3] & 100\% & 0.000* & 30 \\
+REWIRE-v1, selective write (random) & +9.4 & [+8.3, +10.5] & 100\% & 0.000* & 30 \\
+REWIRE-v1: sketch only, ridge & +9.3 & [+7.7, +11.0] & 100\% & 0.000* & 30 \\
+REWIRE-v1, recursive solve & +9.3 & [+7.7, +11.0] & 100\% & 0.000* & 30 \\
+HLOP-R (subspace refreshed) & +9.2 & [+6.5, +11.8] & 100\% & 0.000* & 30 \\
+Ridge on the inputs & +9.0 & [+5.9, +12.5] & 97\% & 0.000* & 30 \\
+REWIRE-v1, selective write (errors) & +8.6 & [+7.5, +9.6] & 100\% & 0.000* & 30 \\
+HLOP, competence-gated & +8.3 & [+6.2, +10.5] & 100\% & 0.000* & 30 \\
+RanPAC-style (ReLU, ridge) & +7.9 & [+6.2, +9.6] & 100\% & 0.000* & 30 \\
+Rehearsal (iso-memory) & +7.3 & [+4.8, +9.7] & 80\% & 0.001* & 30 \\
+HLOP & +7.1 & [+4.7, +9.7] & 93\% & 0.000* & 30 \\
+Dual view, ridge readout & +4.7 & [+3.6, +5.8] & 100\% & 0.000* & 30 \\
+Rehearsal, competence-gated & +4.2 & [+3.5, +4.9] & 100\% & 0.000* & 30 \\
+Rehearsal (20/class) & +3.9 & [+2.9, +4.9] & 90\% & 0.000* & 30 \\
+Sketch only, LDA readout & +3.6 & [+2.9, +4.4] & 100\% & 0.000* & 30 \\
+SLDA on the inputs & +2.7 & [+1.1, +4.3] & 53\% & 0.080 & 30 \\
+REWIRE-gated (ours) & +2.2 & [+1.5, +2.9] & 87\% & 0.000* & 30 \\
+REWIRE-gated, Mahalanobis (ours) & +2.2 & [+1.5, +2.8] & 87\% & 0.000* & 30 \\
+REWIRE, selective write (random) & +1.3 & [+0.9, +1.7] & 87\% & 0.000* & 30 \\
+REWIRE, sketch 128 & +1.0 & [+0.3, +1.7] & 50\% & 0.092 & 30 \\
+REWIRE-gated, budget 128 (ours) & +0.9 & [+0.6, +1.3] & 60\% & 0.002* & 30 \\
+REWIRE, selective write (errors) & +0.8 & [+0.5, +1.1] & 73\% & 0.002* & 30 \\
+ReLU layer instead of LIF & +0.6 & [+0.0, +1.3] & 43\% & 0.572 & 30 \\
+REWIRE, sketch 256 & +0.6 & [+0.1, +1.2] & 47\% & 0.222 & 30 \\
+REWIRE-gated, $\theta$=0.95 (ours) & +0.5 & [+0.3, +0.7] & 73\% & 0.001* & 30 \\
+\bottomrule
+\end{tabular}

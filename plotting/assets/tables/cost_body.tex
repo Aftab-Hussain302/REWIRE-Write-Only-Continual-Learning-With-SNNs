@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrr}
+\toprule
+Method & Adm. & Maint. & Re-adm. & Skipped \\
+\midrule
+REWIRE (ours) & 5.6 & 0 (by constr.) & 5.6 & 0\% \\
+REWIRE-gated (ours) & 5.6 & 0 (by constr.) & 2.5 & 68\% \\
+SLDA on the inputs & 7.8 & 0 (by constr.) & 7.8 & 0\% \\
+RanPAC-style (ReLU, ridge) & 1.9 & 0 (by constr.) & 2.0 & 0\% \\
+HLOP & 20.7 & 11.7 & 11.6 & 0\% \\
+Rehearsal (20/class) & 17.8 & 8.8 & 18.7 & 0\% \\
+Rehearsal (iso-memory) & 17.8 & 8.8 & 18.7 & 0\% \\
+EWC & 10.4 & 1.3 & 10.4 & 0\% \\
+Fine-tuning & 9.0 & -- & 9.0 & 0\% \\
+\bottomrule
+\end{tabular}
