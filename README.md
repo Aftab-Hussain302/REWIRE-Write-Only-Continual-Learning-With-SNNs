@@ -139,6 +139,22 @@ This re-derives every table (`tables/*.tex`), every figure (`figs/*`), the 2 111
 `numbers.json`) and the hypothesis summary (`summary.md`) from the records. `plotting/assets/` holds the copy used for the
 submission; the rebuilt tables are identical to it.
 
+### Notation: the paper's symbols in the code
+
+| paper | meaning | code |
+|---|---|---|
+| $H$, $T$, $\beta$, $u_{\rm th}$ | LIF units, time steps, leak, firing threshold (Eq. 5) | `rw_hidden`, `T`, `beta`, `thr` in `rewire/configure.py` |
+| $z(x)$, $r(x)$, $d_s$ | firing rates of the expansion, ReLU sketch, sketch width (Eq. 6) | `LIFNet.features`, `REWIRE._sketch_view`, `rw_sketch` / `rw2_sketch` |
+| $g$, $v(x)$ | gain of the dual view, input view (Eq. 6) | `REWIRE.sk_scale` (set on the calibration batch), `REWIRE._input_view`, `rw_skip_input`, `rw_skip_max` |
+| $(G, C, n)$ | the three running sums (Eq. 7) | `RidgeMemory.G`, `.C`, `.n` |
+| $\lambda$ | ridge regularisation of REWIRE-v1 (Eq. 8) | `rw_lambda` |
+| $\mu_k$, $S_{\rm w}$, $P$, $\varepsilon$ | class means, within-class scatter, precision of the shrunk covariance, shrinkage (Eq. 9) | `RidgeMemory._solve_lda` (`Lam` is $P$), `rw2_eps` (REWIRE) / `rw_lda_eps` (controls) |
+| $s_k(h)$ | discriminant scores (Eq. 10) | `RidgeMemory.scores` (`W`, `b`) |
+| $f(x)$, $f_{\rm M}(x)$ | cosine and Mahalanobis familiarity (Eq. 11) | `REWIRE._fam` with `rw_fam="cos"` / `"maha"` |
+| $f^{\rm ref}_k$, $\bar f_t$, $c_t$ | familiarity reference of class $k$, chunk familiarity, competence (Eq. 12) | `REWIRE.fam_ref[k]`, `fam` and `c_pre` in `REWIRE.visit`, `balanced_acc` |
+| $\delta$, $\theta$, $B$ | gate margin, competence threshold, budget (Eq. 12) | `rw_gate_delta`, `theta_hi`, `rw_gate_budget` |
+| $E_{\rm MAC}$, $E_{\rm AC}$, backward factor | energy model (Eq. 4) | `pj_mac`, `pj_sop`, `backward_factor` (`CostMeter`) |
+
 ## Repository layout
 
 ```

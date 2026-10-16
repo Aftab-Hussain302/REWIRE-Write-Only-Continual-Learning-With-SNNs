@@ -253,7 +253,7 @@ def fig_gate(run, sc, dss, figs, st, wide=None):
         for i, (ds, g, a0, e0) in enumerate(panels):
             ys = series[key](g, a0, e0); ax.plot([i] * len(ys), ys, color="#c9c8c1", lw=0.8, zorder=2)
             for t, y in zip(g.theta_hi, ys): ax.plot(i, y, marker="o", ms=4.2, color=shade[float(t)], mec="black", mew=0.3, ls="none", zorder=5, label=f"$\\theta$ = {t:g}")
-        ax.axhline(0, color="#898781", lw=0.5, zorder=1); ax.set_xticks(x); ax.set_xticklabels(names, rotation=40 if len(keys) == 2 else 30, ha="right", rotation_mode="anchor"); ax.set_ylabel(ylabels[key])
+        ax.axhline(0, color="#898781", lw=0.5, zorder=1); ax.set_xticks(x); ax.set_xticklabels(names, rotation=90); ax.set_ylabel(ylabels[key])
         ax.grid(True, axis="y"); ax.grid(False, axis="x"); ax.margins(x=0.08, y=0.15)
     default = float(sc.theta_hi.mode().iloc[0]) if "theta_hi" in sc else None
     handles = [plt.Line2D([], [], marker="o", ms=4.2, color=shade[t], mec="black", mew=0.3, ls="none", label=f"$\\theta$ = {t:g}" + (" (default)" if default is not None and abs(t - default) < 1e-9 else "")) for t in thetas]
